@@ -1,0 +1,112 @@
+<!-- Template to load the correct layout according to the Resource Type (Custom Post Type) -->
+<?php
+
+    ## Set some variables based on Post Type
+    $postType = get_post_type();
+    $postObject = get_post_type_object($postType);
+    $siteURL = get_site_url();
+    $protocol = ( isset($_SERVER['HTTPS']) ) ? 'https://' : 'http://';
+
+    ## Set some variables based on Post Data
+    $useCases = wp_get_post_terms( $post->ID, 'use_case', array("fields" => "names") );
+    $summary = get_field('asset-summary');
+    $image = get_field('asset-image')['url'];
+    $link = get_field('asset-link');
+
+    ## Make the Image URL relative
+    $image = parse_url($image, PHP_URL_PATH);
+
+    ## switch/case + preg_match to extract video embed IDs or direct to internal vs external pages
+    switch (true){
+        case stristr($link,'youtu.be'):
+        case stristr($link,'youtube.com'):
+            preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $link, $matches);
+            $link = $matches[1];
+            break;
+        ## case stristr($link,'c4'):
+        ##     Need to add support for Vimeo!!!
+        ##     break;
+        case $link[0] === '/':
+            ## Do Nothing because this is a relative link and I like it
+            break;
+        case (strpos($link,'pages.tegile.com') !== false):
+            ## Do Nothing because this is a Marketo Link and they don't support SSL without lots of $$$$$
+            break;
+        default:
+            $link = $protocol . str_replace(array('https://','http://'), array('https://' => '','http://' => ''), $link);
+            break;
+    }
+
+
+
+    ## Set grid values for different resource types
+    $defaultGrid = array(
+        'left' => 'small-12 medium-7 large-7 columns',
+        'right' => 'small-12 medium-5 large-5 columns text-center',
+    );
+    $grid = array(
+        'video' => array(
+            'left' => 'small-12 medium-12 large-6 columns',
+            'right' => 'small-12 medium-12 large-6 columns',
+        ),
+    );
+    $grid['case_study'] = $grid['product_info'] = $grid['white_paper'] = $defaultGrid;
+
+?>
+
+<div class="row-wide no-padding-bottom">
+    <div class="row">
+        <div class="small-12 columns">
+            <p class="uppercase font-weight-bold color-lead font-size-h4 no-margin-bottom">
+                <?php echo $postObject->labels->singular_name; ?>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row-wide no-padding-top padding-bottom-300rem">
+    <div class="row">   
+        <div class="<?php echo $grid[$postType]['left'] ?>">
+            <h1 class="asset-lp font-size-h1-hero-bold single-title">
+                <?php the_title(); ?>
+            </h1>
+            <p class="use-cases color-lead font-size-h5">
+                <span class="uppercase font-weight-bold">
+                    Use Cases:
+                </span>
+                <?php echo implode($useCases,', '); ?>
+            </p>
+            <div class="asset-blurb">
+                <?php echo $summary ?>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="<?php echo $grid[$postType]['right'] ?>">
+
+            <?php if(isset($matches)) :?>
+                
+                <!-- Need to add support for Vimeo!!! -->
+                <div class="iframe-container shadow no-margin-bottom">
+                    <iframe src="https://www.youtube.com/embed/<?php echo $link; ?>?rel=0&theme=light&color=red&modestbranding=1&autoplay=1" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+
+            <?php else :?>
+
+                <div class="clear200rem show-for-small-only"></div>
+                <a id="resource-image" href="<?php echo $link; ?>" class="asset-cs-logo <?php echo $post_type ?>" target="_blank">
+                    <img src="<?php echo $image; ?>" alt="<?php echo the_title(); ?>">
+                </a>
+                <p>
+                    <?php if (strpos($link,'pages.tegile.com') !== false) : ?>
+                        <a href="<?php echo $link ?>" class="button" target="_blank">
+                    <?php else : ?>
+                        <a href="<?php echo $link ?>" class="button">
+                    <?php endif; ?>
+                        Get the <?php echo $postObject->labels->singular_name; ?>
+                    </a>
+                </p>
+
+            <?php endif;?>
+
+        </div>
+    </div>
+</div>

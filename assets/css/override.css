@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1024px) {
+    nav.top-bar.mega-menu.nav-shrink {
+        max-height: 3.1875rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav.top-bar.mega-menu.nav-shrink ul.top-nav-menu.open {
+        margin: 0 !important;
+    }
+}

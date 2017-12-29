@@ -1,0 +1,101 @@
+{
+    "key": "group_58cc7eb983513",
+    "title": "News",
+    "fields": [
+        {
+            "key": "field_56a929744cbf0",
+            "label": "Publisher Logo",
+            "name": "publisher-logo",
+            "type": "image",
+            "instructions": "Search for publisher logo from Media Library, or upload a new logo.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_56a929ee4cbf1",
+            "label": "Publisher Name",
+            "name": "publisher-name",
+            "type": "text",
+            "instructions": "(e.g., CNN, ComputerWorld, ZDNet, The Register, etc.)",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "Published By:",
+            "append": "",
+            "formatting": "none"
+        },
+        {
+            "key": "field_53a1ed18bf8d8",
+            "label": "Link",
+            "name": "news-link",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "Article URL:",
+            "append": "",
+            "formatting": "none"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1514519595
+}

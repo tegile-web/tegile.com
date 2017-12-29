@@ -1,0 +1,44 @@
+/******************************************************************
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here is where you import
+all of your Sass files so they can compile into one
+CSS file.
+******************************************************************/
+
+// IMPORTING FONTS
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700');
+
+// IMPORTING STYLES
+
+// Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
+@import "overrides";
+
+// Import normalize from Bower
+@import "../../bower/foundation/scss/normalize";
+
+// Import foundation.scss from Bower
+@import "../../bower/foundation/scss/foundation";
+
+// Import local Settings
+@import "settings";
+
+// Import mixins
+@import "mixins";
+
+// Make gallery use Foundation block grid
+@import "gallery";
+
+// Import your custom styles
+// For Main Theme
+@import "main","typography","social","cards","popups","hero","adhoc","sizes","flexbox","buttons","mega-menus","hr";
+// For Micro-Site Theme
+// @import "main","typography","social","hero","adhoc","sizes","flexbox","buttons","simple-menus","hr";
+
+// Import your retina/HD sty;es
+@import "2x";
+
+// Import your print styles
+@import "print";

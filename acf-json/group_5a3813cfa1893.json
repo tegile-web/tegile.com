@@ -1,0 +1,236 @@
+{
+    "key": "group_5a3813cfa1893",
+    "title": "Popup Display Rules",
+    "fields": [
+        {
+            "key": "field_5a38140a13711",
+            "label": "Rulesets",
+            "name": "rules",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5a38192113712",
+            "min": 1,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Rule Group ( or +)",
+            "sub_fields": [
+                {
+                    "key": "field_5a38192113712",
+                    "label": "",
+                    "name": "ruleset",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 1,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "and +",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a38194513713",
+                            "label": "Display Type",
+                            "name": "type",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "select": "Select...",
+                                "browser": "Browser",
+                                "url": "URL",
+                                "name": "Page Name",
+                                "type": "Post type",
+                                "geo": "Country",
+                                "referrer": "Referrer",
+                                "query": "Query String"
+                            },
+                            "default_value": [
+                                "select"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a381b8d13714",
+                            "label": "Display Logic",
+                            "name": "logic",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a38194513713",
+                                        "operator": "!=",
+                                        "value": "select"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": [
+                                "is equal to",
+                                "is not equal to",
+                                "contains"
+                            ],
+                            "default_value": [
+                                2
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a381e6413717",
+                            "label": "Logic Value",
+                            "name": "value",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a38194513713",
+                                        "operator": "!=",
+                                        "value": "select"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "60",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5a3824cfeff74",
+            "label": "Conversion Timeout",
+            "name": "converted",
+            "type": "number",
+            "instructions": "Enter the number of days the popup should remain disabled after it converts successfully. (Will only take effect if the user does not clear cookies).  Default is 90 days.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 90,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 365,
+            "step": 1
+        },
+        {
+            "key": "field_5a38254ceff75",
+            "label": "Closed Timeout",
+            "name": "closed",
+            "type": "number",
+            "instructions": "Enter the number of days the popup should remain disabled after it is closed without converting. (Will only take effect if the user does not clear cookies).  Default is 30 days.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 30,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 365,
+            "step": 1
+        },
+        {
+            "key": "field_5a382486eff73",
+            "label": "Test Mode",
+            "name": "test_mode",
+            "type": "true_false",
+            "instructions": "If testing, switch this to \"On\" to make the popup ignore cookie values.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "On",
+            "ui_off_text": "Off"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "popup"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1514519625
+}

@@ -1,0 +1,90 @@
+/************************************************
+
+Stylesheet: Div Sizes Stylesheet
+
+*************************************************/
+
+/*
+*-for-small-up,
+*-for-small-only,
+
+*-for-medium-up,
+*-for-medium-down,
+*-for-medium-only,
+
+*-for-large-down,
+*-for-large-only,
+*/
+
+/* $screen-sizes: (
+    "small" $small-list,
+    "medium" $medium-list,
+    "large" $large-list,
+);
+
+$small-list: ("up", "only");
+$medium-list: ("up", "down", "only");
+$large-list: ("down", "only");
+
+$minMax: ("min", "max");
+$highWide: ("height", "width");
+
+@mixin viewport-media-queries(){}
+
+@mixin viewport- */
+
+@mixin create-size-classes($num: 10) {
+
+    @for $i from 1 through $num {
+
+        @if($i < 2) {
+            .min-height-5 {
+                min-height: 5vh !important;
+            }
+            .max-height-5 {
+                max-height: 5vh !important;
+            }
+            .min-width-5 {
+                min-height: 5vw !important;
+            }
+            .max-width-5 {
+                max-height: 5vw !important;
+            }
+        }
+
+        $height: $i * 10vh;
+        $width: $i * 10vw;
+        $halfHeight: ($i + .5) * 10vh;
+        $halfWidth: ($i + .5) * 10vw;
+
+        .min-height-#{$i}0 {
+            min-height: $height !important;
+        }
+        .max-height-#{$i}0 {
+            min-height: $height !important;
+        }
+        .min-width-#{$i}0 {
+            min-height: $height !important;
+        }
+        .max-width-#{$i}0 {
+            min-height: $height !important;
+        }
+
+        @if($i < 10) {
+            .min-height-#{$i}5 {
+                min-height: $halfHeight !important;
+            }
+            .max-height-#{$i}5 {
+                min-height: $halfHeight !important;
+            }
+            .min-width-#{$i}5 {
+                min-height: $halfHeight !important;
+            }
+            .max-width-#{$i}5 {
+                min-height: $halfHeight !important;
+            }
+        }
+    }
+}
+
+@include create-size-classes();

@@ -1,0 +1,25 @@
+.fancy-section-break {
+
+    padding: 0;
+
+    & .columns {
+
+        padding: 0;
+        width: 100%;
+
+        & .break-container {
+
+            position: absolute;
+            width: 100%;
+            height: 6rem;
+            top: -3rem;
+            z-index: 6;
+
+            @media #{$small-screen} {
+
+                height: 3rem;
+                top: -1.5rem;
+            }
+        }
+    }
+}

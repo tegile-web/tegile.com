@@ -1,0 +1,168 @@
+{
+    "key": "group_58cc7eba93138",
+    "title": "Webinar",
+    "fields": [
+        {
+            "key": "field_53a2022eee0c9",
+            "label": "Subtitle",
+            "name": "webinar-subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "'Live' Webinar",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html"
+        },
+        {
+            "key": "field_53ebf4a9c760d",
+            "label": "On Demand",
+            "name": "webinar-is-ondemand",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "message": "On Demand Webinar",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_53a201d8ee0c6",
+            "label": "Start Date",
+            "name": "webinar-date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "m\/d\/Y",
+            "return_format": "Ymd",
+            "first_day": 1
+        },
+        {
+            "key": "field_53a201f4ee0c7",
+            "label": "Start Time",
+            "name": "webinar-time",
+            "type": "text",
+            "instructions": "example: 2:00 PM ET\/11:00 AM PT",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ebf4a9c760d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html"
+        },
+        {
+            "key": "field_53a2020dee0c8",
+            "label": "Webinar Link",
+            "name": "webinar-link",
+            "type": "text",
+            "instructions": "Only add a URL if the destination is external. Otherwise, the links will go to an auto-generated Wordpress page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "External URL Only",
+            "append": "",
+            "formatting": "none"
+        },
+        {
+            "key": "field_56ec90f9a6346",
+            "label": "iFrame Code",
+            "name": "iframe-code",
+            "type": "textarea",
+            "instructions": "If there is an iframe to post for this on-demand webinar, please include it here.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53ebf4a9c760d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "Insert <iframe><\/iframe> code here.",
+            "rows": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "webinar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1514519620
+}

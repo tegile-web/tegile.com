@@ -1,0 +1,504 @@
+{
+    "key": "group_5a382ee221f47",
+    "title": "Popup Display Options",
+    "fields": [
+        {
+            "key": "field_5a382eea1484e",
+            "label": "Theme",
+            "name": "theme",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "",
+            "min": 1,
+            "max": 1,
+            "layouts": [
+                {
+                    "key": "5a382ef88006c",
+                    "name": "banner",
+                    "label": "Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a382f331484f",
+                            "label": "Location",
+                            "name": "location",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "top: Top": "top: Top",
+                                "bottom: Bottom": "bottom: Bottom"
+                            },
+                            "default_value": [
+                                "top"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a3985354283b",
+                            "label": "Display Style",
+                            "name": "style",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Cover",
+                            "ui_off_text": "Push"
+                        },
+                        {
+                            "key": "field_5a3984844283a",
+                            "label": "Auto Height?",
+                            "name": "auto_height",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5a382f9214850",
+                            "label": "Minimum Height",
+                            "name": "min_height",
+                            "type": "Range",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a3984844283a",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "slider_type": "default",
+                            "title": "Height in rem units (1rem ~ 16px)",
+                            "prepend": "",
+                            "append": "rem",
+                            "separate": "",
+                            "default_value_1": 5,
+                            "default_value_2": "",
+                            "min": 1,
+                            "max": 10,
+                            "step": 1,
+                            "font_size": 14
+                        },
+                        {
+                            "key": "field_5a3936cf0068d",
+                            "label": "Message",
+                            "name": "message",
+                            "type": "acf_code_field",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<p>Enter plain-text or html here...<\/p>",
+                            "placeholder": "",
+                            "mode": "htmlmixed",
+                            "theme": "neo"
+                        },
+                        {
+                            "key": "field_5a39861f86135",
+                            "label": "Buttons",
+                            "name": "buttons",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_5a39868c86137",
+                            "min": 0,
+                            "max": 2,
+                            "layout": "table",
+                            "button_label": "Add Button",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5a39863e86136",
+                                    "label": "Button",
+                                    "name": "button",
+                                    "type": "smart_button",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": ""
+                                },
+                                {
+                                    "key": "field_5a39868c86137",
+                                    "label": "Action",
+                                    "name": "action",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "_self": "Open Link",
+                                        "_blank": "Open in New Tab",
+                                        "_dismiss": "Dismiss Notice",
+                                        "_back": "Back to Referrer",
+                                        "_close": "Close Tab"
+                                    },
+                                    "default_value": [
+                                        "_self"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5a38304114851",
+                    "name": "modal",
+                    "label": "Modal",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a38304a14852",
+                            "label": "Max Height",
+                            "name": "height",
+                            "type": "Range",
+                            "instructions": "Select the maximum height as a percentage of the screen.  Default is 60%.  On tablet and below, this will fallback to 85%.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "slider_type": "default",
+                            "title": "",
+                            "prepend": "",
+                            "append": "%",
+                            "separate": "-",
+                            "default_value_1": 60,
+                            "default_value_2": "",
+                            "min": 40,
+                            "max": 90,
+                            "step": 5,
+                            "font_size": 14
+                        },
+                        {
+                            "key": "field_5a38312b14853",
+                            "label": "Max Width",
+                            "name": "width",
+                            "type": "Range",
+                            "instructions": "Select the maximum width as a percentage of the screen.  Default is 60%.  On tablet and below, this will fallback to 85%.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "slider_type": "default",
+                            "title": "",
+                            "prepend": "",
+                            "append": "%",
+                            "separate": "-",
+                            "default_value_1": 60,
+                            "default_value_2": "",
+                            "min": 40,
+                            "max": 90,
+                            "step": 5,
+                            "font_size": 14
+                        },
+                        {
+                            "key": "field_5a38315714854",
+                            "label": "Location",
+                            "name": "location",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "c_c": "Centered",
+                                "c_l": "Center Left",
+                                "t_c": "Top Center",
+                                "c_r": "Center Right",
+                                "b_c": "Bottom Center"
+                            },
+                            "default_value": [
+                                "c_c"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5a3833aed06b0",
+            "label": "Animation",
+            "name": "animation",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bounce": "bounce",
+                "flash": "flash",
+                "pulse": "pulse",
+                "rubberBand": "rubberBand",
+                "shake": "shake",
+                "headShake": "headShake",
+                "swing": "swing",
+                "tada": "tada",
+                "wobble": "wobble",
+                "jello": "jello",
+                "bounceIn": "bounceIn",
+                "bounceInDown": "bounceInDown",
+                "bounceInLeft": "bounceInLeft",
+                "bounceInRight": "bounceInRight",
+                "bounceInUp": "bounceInUp",
+                "bounceOut": "bounceOut",
+                "bounceOutDown": "bounceOutDown",
+                "bounceOutLeft": "bounceOutLeft",
+                "bounceOutRight": "bounceOutRight",
+                "bounceOutUp": "bounceOutUp",
+                "fadeIn": "fadeIn",
+                "fadeInDown": "fadeInDown",
+                "fadeInDownBig": "fadeInDownBig",
+                "fadeInLeft": "fadeInLeft",
+                "fadeInLeftBig": "fadeInLeftBig",
+                "fadeInRight": "fadeInRight",
+                "fadeInRightBig": "fadeInRightBig",
+                "fadeInUp": "fadeInUp",
+                "fadeInUpBig": "fadeInUpBig",
+                "fadeOut": "fadeOut",
+                "fadeOutDown": "fadeOutDown",
+                "fadeOutDownBig": "fadeOutDownBig",
+                "fadeOutLeft": "fadeOutLeft",
+                "fadeOutLeftBig": "fadeOutLeftBig",
+                "fadeOutRight": "fadeOutRight",
+                "fadeOutRightBig": "fadeOutRightBig",
+                "fadeOutUp": "fadeOutUp",
+                "fadeOutUpBig": "fadeOutUpBig",
+                "flipInX": "flipInX",
+                "flipInY": "flipInY",
+                "flipOutX": "flipOutX",
+                "flipOutY": "flipOutY",
+                "lightSpeedIn": "lightSpeedIn",
+                "lightSpeedOut": "lightSpeedOut",
+                "rotateIn": "rotateIn",
+                "rotateInDownLeft": "rotateInDownLeft",
+                "rotateInDownRight": "rotateInDownRight",
+                "rotateInUpLeft": "rotateInUpLeft",
+                "rotateInUpRight": "rotateInUpRight",
+                "rotateOut": "rotateOut",
+                "rotateOutDownLeft": "rotateOutDownLeft",
+                "rotateOutDownRight": "rotateOutDownRight",
+                "rotateOutUpLeft": "rotateOutUpLeft",
+                "rotateOutUpRight": "rotateOutUpRight",
+                "hinge": "hinge",
+                "jackInTheBox": "jackInTheBox",
+                "rollIn": "rollIn",
+                "rollOut": "rollOut",
+                "zoomIn": "zoomIn",
+                "zoomInDown": "zoomInDown",
+                "zoomInLeft": "zoomInLeft",
+                "zoomInRight": "zoomInRight",
+                "zoomInUp": "zoomInUp",
+                "zoomOut": "zoomOut",
+                "zoomOutDown": "zoomOutDown",
+                "zoomOutLeft": "zoomOutLeft",
+                "zoomOutRight": "zoomOutRight",
+                "zoomOutUp": "zoomOutUp",
+                "slideInDown": "slideInDown",
+                "slideInLeft": "slideInLeft",
+                "slideInRight": "slideInRight",
+                "slideInUp": "slideInUp",
+                "slideOutDown": "slideOutDown",
+                "slideOutLeft": "slideOutLeft",
+                "slideOutRight": "slideOutRight",
+                "slideOutUp": "slideOutUp"
+            },
+            "default_value": [
+                "fadeIn"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a3abe3ec96cd",
+            "label": "Show Close Button?",
+            "name": "close",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a3834510ec44",
+            "label": "Visible on Tablet?",
+            "name": "tablet",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a3834800ec45",
+            "label": "Visible on Mobile?",
+            "name": "mobile",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a3834510ec44",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "popup"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1514519604
+}

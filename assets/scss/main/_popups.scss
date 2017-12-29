@@ -1,0 +1,111 @@
+/************************************************
+
+Stylesheet: Popup Stylesheet
+
+*************************************************/
+
+[id*="spu-"].spu-box {
+
+  @media #{$small-screen} {
+    display: none !important;
+  }
+
+  border: none;
+  padding: 0 !important;
+  overflow: hidden;
+
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+
+  -webkit-box-shadow: $popup-shadow;
+  -moz-box-shadow: $popup-shadow;
+  box-shadow: $popup-shadow;
+
+  z-index: 100000000000;
+
+  &.spu-bottom-right {
+
+    & .popup-growl {
+      width: 500px;
+    }
+
+    & .popup-tag {
+      // Nothing Yet
+    }
+
+    & .popup-modal {
+      // Nothing Yet
+    }
+  }
+
+  &.spu-bottom-bar {
+    padding: 0 !important;
+    width: 40% !important;
+    margin: 0% 30% !important;
+
+    @media #{$medium-screen} {
+      width: 50% !important;
+      margin: 0% 25% !important;
+    }
+
+    @media #{$small-screen} {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }
+
+  // Add subclass styles for each potential popup location
+}
+
+.spu-content {
+
+  & .popup-img {
+    padding: 1rem;
+    padding-bottom: 0;
+
+    & img {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  & .popup-cta {
+    padding: .5rem 1rem;
+    background: #ededed;
+    color: $charcoal;
+
+    & p {
+      letter-spacing: 1px;
+      margin-bottom: 0.25rem;
+      font-size: $small-font-size;
+
+      &.title {
+        font-weight: $font-weight-semibold;
+      }
+
+      &.blurb {
+        font-family: $font-family-lato;
+        font-weight: $font-weight-light;
+        font-size: $normal-font-size;
+        font-style: italic;
+        line-height: 140%;
+
+        &:after {
+            clear: both;
+        }
+      }
+
+      &.blurb-short {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+
+      &.action {
+        letter-spacing: normal;
+        text-align: right;
+      }
+    }
+  }
+}

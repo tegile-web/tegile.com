@@ -1,0 +1,16 @@
+/************************************************
+
+Stylesheet: Flexbox Stylesheet
+
+*************************************************/
+
+.flex-container {
+    
+    display: -webkit-flex;
+    display: flex;
+
+    .flex-item {
+
+        flex: 1;
+    }
+}

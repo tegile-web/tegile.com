@@ -1,0 +1,451 @@
+/************************************************
+
+Stylesheet: Mega-Menu CSS Stylesheet
+
+*************************************************/
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999999;
+    transition: box-shadow, background, border, top 0.2s ease;
+
+    &:before,
+    &:after {
+
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: opacity 0.3s;
+    }
+
+    &:before {
+
+        background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.125) 70%, transparent 100%);
+    }
+
+    &:after {
+
+        box-shadow: 0 0 30px 0 rgba(0,0,0,0.375);
+        background: transparentize($charcoal, 0.01);
+        opacity: 0;
+    }
+
+    &.alt-nav-bkg {
+
+        &:after {
+            
+            opacity: 1;
+        }
+    }
+
+    &.hide-nav {
+
+        top: -4rem;
+
+        & #burger {
+
+            top: -4rem;
+        }
+    }
+
+    & .nav-wrapper {
+
+        position: relative;
+        max-width: 73.125rem;
+        margin: 0 auto;
+        height: 4rem;
+        overflow: hidden;
+
+        & .logo {
+
+            display: inline-block;
+            width: 8rem;
+            float: left;
+            transition: opacity 0.2s;
+
+            @media #{$medium-down-screen} {
+
+                float: none;
+                margin-right: -2rem;
+            }
+        }
+
+        & .banner-button {
+
+            display: inline-block;
+            float: right;
+
+            @media #{$medium-down-screen} {
+
+                display: none;
+            }
+
+            & .button {
+
+                // New Styles Here
+            }
+        }
+
+        & nav {
+
+            display: inherit;
+            text-align: right;
+            transition: opacity 0.2s;
+
+            @media #{$medium-down-screen} {
+
+                display: inline-block;
+                text-align: center;
+            }
+
+            &.icon-menu {
+
+                color: $off-white;
+                float: right;
+
+                & a {
+
+                    color: $off-white;
+                    transition: color 0.2s ease;
+                    display: inline-block;
+                    margin-right: 1rem;
+
+                    & .fa {
+
+                        transition: transform 0.2s ease;
+                        margin: 0;
+                    }
+
+                    &:hover {
+
+                        color: $white;
+
+                        & .fa {
+
+                            transform: scale(1.5);
+                        }
+                    }
+
+                    &.search-icon {
+
+                        transform: rotate(-45deg);
+                    }
+
+                    @media #{$medium-down-screen} {
+
+                        display: none;
+
+                        &:last-of-type {
+
+                            display: inline-block;
+                            margin-right: 1rem;
+                            transition: opacity 0.2s;
+
+                            & .fa {
+                                
+                                transform: scale(1.75) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.top-bar {
+
+                overflow: visible !important;
+
+                & .button {
+
+                    height: inherit;
+                }
+
+                &.simple-menu {
+                
+                    background: $transparent;
+                    z-index: 999 !important;
+                    animation: fadein 2s;
+                    letter-spacing: 1px;
+                    height: auto !important;
+
+                    & ul.top-nav-menu {
+
+                        margin: 0;
+                        display: inline;
+
+                        & li {
+
+                            &.mobile-nav-icons {
+
+                                display: none;
+                            }
+
+                            &.top-nav-item {
+
+                                display: inline;
+
+                                & .top-level {
+                                
+                                    position: relative;
+                                    @include fluid-type(37.5rem, 80rem, 0.925rem, 1rem);
+                                    font-weight: $font-weight-extralight;
+                                    line-height: normal;
+                                    padding: 1.5rem 0.5rem;
+                                    color: $off-white;
+                                    transition: none;
+
+                                    @media #{$large-screen} {
+                                        
+                                        &.open,
+                                        &:hover {
+
+                                            background: $white;
+                                            color: $charcoal;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        @media #{$medium-down-screen} {
+
+                            overflow: scroll;
+                            display: block;
+                            top: 0;
+                            padding: 0;
+                            left: 0;
+                            transition: left 0.3s ease;
+                            width: 100vw;
+                            margin-left: 0;
+                            z-index: 800;
+                            overflow: scroll;
+
+                            & li {
+
+                                position: relative;
+                                border-bottom: 1px solid rgba(255,255,255,0.25);
+
+                                &.mobile-nav-icons {
+                                    
+                                    display: block;
+                                    background: rgba(0,0,0,0.25);
+                                    box-shadow: 0 0 50px rgba(0,0,0,0.25) inset;
+
+                                    & a {
+
+                                        padding: 0;
+                                        display: inline-block;
+                                        width: 3rem;
+                                        height: 3rem;
+                                        margin: 1rem 0.5rem;
+                                        line-height: 3rem;
+                                        background: #fbfbfb;
+                                        border-radius: 100%;
+                                        box-shadow: 0 0 25px rgba(0,0,0,0.375);
+
+                                        & .fa {
+
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+
+                                &.top-nav-item {
+
+                                    display: block;
+
+                                    & a {
+
+                                        &.mobile-back-btn {
+
+                                            position: absolute;
+                                            color: $off-white;
+                                            left: 15%;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            z-index: 10;
+
+                                            & i {
+
+                                                margin: 0;
+                                            }
+                                        }
+
+                                        &.top-level {
+
+                                            display: block;
+                                            padding: 1rem 0;
+                                            width: 70%;
+                                            margin: 0 auto;
+
+                                            &[data-mega-menu] {
+
+                                                &:after {
+
+                                                    content: '\f105';
+                                                    font-family: FontAwesome;
+                                                    position: absolute;
+                                                    right: 0;
+                                                    left: auto;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    font-size: 1.375rem;
+                                                    color: #fbfbfb;
+                                                    display: block;
+                                                    height: auto;
+                                                    width: 0;
+                                                }
+                                            }
+                                        }
+
+                                        &.mobile-nav-back {
+
+                                            position: absolute;
+                                            left: 0;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            margin-left: 6%;
+                                            font-size: 1.375rem;
+                                            color: #fbfbfb;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                &:focus {
+
+                        outline: none;
+                    }
+                }
+
+                @media #{$medium-down-screen} {
+
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    transform: none;
+                    margin-top: 4rem;
+
+                    &.open {
+
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        @media #{$medium-down-screen} {
+
+            overflow: inherit;
+            border-bottom: 1px solid rgba(255,255,255,0.25);
+        }
+    }
+}
+
+/************************
+ *  Mobile Menu Burger  *
+*************************/
+
+#burger {
+
+    @media #{$large-screen} {
+
+        display: none !important;
+    }
+
+    width: 2rem;
+    height: 1.25rem;
+    position: fixed;
+    top: 1.375rem;
+    left: 1.125rem;
+    transition: top 0.2s ease, transform 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 1000;
+
+    &:before {
+
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: transparent;
+        border-radius: 200px;
+        transform: translate(-50%,-50%);
+        transition: all 0.2s;
+    }
+
+    & span {
+
+        display: block;
+        position: absolute;
+        height: 0.25rem;
+        width: 100%;
+        background: #FBFBFB;
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: 0.25s ease-in-out;
+
+        &:nth-child(1) {
+            
+            top: 0;
+        }
+
+        &:nth-child(2) {
+            
+            top: 0.5rem;
+        }
+
+        &:nth-child(3) {
+            
+            top: 1rem;
+        }
+    }
+
+    &.open {
+
+        transform: rotateZ(360deg);
+
+        & span {
+
+            color: $alert;
+            
+            &:nth-child(1) {
+                top: 0.5rem;
+                transform: rotate(135deg);
+            }
+            
+            &:nth-child(2) {
+                opacity: 0;
+                // left: -5rem;
+            }
+            
+            &:nth-child(3) {
+                top: 0.5rem;
+                transform: rotate(-135deg);
+            }
+        }
+    }
+}

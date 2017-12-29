@@ -1,0 +1,68 @@
+/************************************************
+
+Stylesheet: Social Media Stylesheet
+
+*************************************************/
+
+
+footer.lp-footer {
+
+    * {
+        color: $charcoal;
+    }
+
+    img.lp-footer-logo {
+        max-width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    a {
+
+        color: $charcoal;
+        // opacity: .75;
+
+        &:hover {
+
+            color: $sky-blue;
+            opacity: 1;
+
+            .fa-stack {
+
+                .fa-background {
+                    opacity: 1;
+                }
+
+                .fa-stack-1x {
+                    color: $white;
+                }
+
+                transform: scale(1.3);
+            }
+        }
+    }
+
+    .social-icons {
+
+        a {
+            opacity: .5;
+            transition: all .25s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .fa-stack {
+
+            transition: all .25s;
+
+            margin: .5rem 0;
+
+            .fa-background {
+
+                opacity: 0;
+                text-shadow: 2px 2px 8px rgba(0,0,0,0.35);
+            }
+        }
+    }
+}

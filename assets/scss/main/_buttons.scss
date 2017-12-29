@@ -1,0 +1,239 @@
+/************************************************
+
+Stylesheet: Button Styles
+
+*************************************************/
+
+
+// Root these settings in the "Main" div
+header,
+#main,
+#state-list {
+
+    //   "foundation/components/button-groups",
+    & ul {
+
+        &.button-group {
+
+            & li {
+                margin: 0;
+
+                &:first-of-type {
+
+                    & a.button {
+                        border-radius: none;
+                        border-top-left-radius: $global-radius;
+                        border-bottom-left-radius: $global-radius;
+
+                        @media #{$small-screen} {
+                            width: 85vw;
+                            max-width: 20rem;
+                        }
+                    }
+                }
+
+                &:last-of-type {
+                    margin-left: 1px !important;
+
+                    & a.button {
+                        border-radius: none;
+                        border-top-right-radius: $global-radius;
+                        border-bottom-right-radius: $global-radius;
+                    }
+
+                    @media #{$medium-down-screen} {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // Figure this out
+    ul.button-group.round {
+
+        @media #{$medium-down-screen} {
+
+            border-radius: 1000px;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+
+            & li {
+
+                display: block;
+                margin: 0;
+                width: 100%;
+                border-radius: 0;
+
+                & a,
+                & button,
+                & .button {
+
+                    border-color: rgba(255,255,255,0.5);
+                    border-radius: 0;
+                    border-left-width: 0;
+                    border-top: 1px solid;
+                    width: 100%;
+                }
+
+                &:first-child {
+
+                    & * {
+
+                        border-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    & .banner-button {
+
+        & a {
+
+            &.button {
+
+                color: $banner-button-font-color;
+                background-color: $banner-button-bg-color;
+                box-shadow: $banner-button-depth-effect;
+                transition: box-shadow 0.3s ease;
+
+                &:hover {
+
+                    color: $charcoal !important;
+                    top: 0 !important;
+                    background-color: $transparent;
+                    box-shadow: $banner-button-hover-depth-effect
+                }
+            }
+        }
+    }
+
+    & a {
+
+        &.go,
+        &.external {
+
+            font-weight: $font-weight-extralight;
+            text-transform: uppercase;
+            font-size: $normal-font-size;
+
+            &:after {
+
+                font-family: "FontAwesome";
+                margin-left: .5rem;
+            }
+        }
+
+        &.go {
+
+            &:after {
+
+                content: '\f0a9';
+            }
+        }
+
+        &.external {
+
+            &:after {
+
+                content: '\f08e';
+            }
+        }
+
+        //   "foundation/components/buttons",
+        &.button {
+
+            position: relative;
+            text-transform: uppercase !important;
+            letter-spacing: $button-letter-spacing !important;
+            font-weight: $button-font-weight !important;
+            font-size: $normal-font-size !important;
+            color: $button-font-color !important;
+            background-color: $button-bg-color;
+            border: $button-border;
+            border-radius: $global-radius;
+            box-shadow: $button-depth-effect;
+            padding: 1rem 2rem 1.0625rem 2rem;
+
+            &:hover {
+                background-color: $button-bg-hover;
+                top: $global-radius;
+                box-shadow: none;
+            }
+
+            &:active {
+                background-color: $button-bg-active;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0 !important;
+            }
+
+            &.img-button {
+
+                padding: 1rem 4rem 1rem 2rem;
+
+                & img {
+
+                    max-height: 2rem;
+                }
+
+                &:after {
+
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 1.5rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// .top-bar-section {
+
+//     &.right {
+
+//         & ul {
+
+//             & li {
+
+//                 & > a {
+
+//                     &.button {
+//                         text-transform: uppercase;
+//                         padding: 0.75rem;
+//                         color: $banner-button-font-color;
+//                         background-color: $banner-button-bg-color;
+//                         border-width: 2px !important;
+//                         border-style: $banner-button-border-style;
+//                         border-color: $banner-button-border-color;
+//                         transition: $button-hover-transition;
+//                         border-radius: $global-radius;
+
+//                         &:hover {
+//                             color: $banner-button-font-hover;
+//                             background-color: $banner-button-bg-hover;
+//                             border-width: $banner-button-border-width;
+//                             border-color: $banner-button-border-hover;
+//                         }
+
+//                         &:active,
+//                         &:focus {
+//                             text-decoration: none;
+//                             color: $banner-button-font-hover;
+//                             border-color: $banner-button-bg-active;
+//                             background-color: $banner-button-bg-active;
+//                         }
+
+//                         &:after {
+//                             clear: both;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

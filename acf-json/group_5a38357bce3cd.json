@@ -1,0 +1,160 @@
+{
+    "key": "group_5a38357bce3cd",
+    "title": "Popup Trigger Rules",
+    "fields": [
+        {
+            "key": "field_5a38358211714",
+            "label": "Trigger",
+            "name": "trigger",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "immediate": "Immediate",
+                "exit": "Exit Intent",
+                "timer": "Timer",
+                "depth": "Scroll Depth",
+                "element": "Element Visible on Screen"
+            },
+            "default_value": [
+                "timer"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a3836c611716",
+            "label": "Number of Seconds",
+            "name": "timer",
+            "type": "Range",
+            "instructions": "Number of seconds until the pop-up appears.  Default is 4.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a38358211714",
+                        "operator": "==",
+                        "value": "timer"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_type": "default",
+            "title": "",
+            "prepend": "",
+            "append": "seconds",
+            "separate": "-",
+            "default_value_1": 4,
+            "default_value_2": "",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "font_size": 14
+        },
+        {
+            "key": "field_5a38375211717",
+            "label": "Scroll Depth",
+            "name": "depth",
+            "type": "Range",
+            "instructions": "Percentage of the page a user has to scroll before the popup is displayed.  Default is 75%.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a38358211714",
+                        "operator": "==",
+                        "value": "depth"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_type": "default",
+            "title": "",
+            "prepend": "",
+            "append": "%",
+            "separate": "-",
+            "default_value_1": 75,
+            "default_value_2": "",
+            "min": 25,
+            "max": 100,
+            "step": 25,
+            "font_size": 14
+        },
+        {
+            "key": "field_5a3837ec11718",
+            "label": "Trigger Element",
+            "name": "element",
+            "type": "text",
+            "instructions": "Enter the ID of the element that will trigger the popup to display.  Must be an ID. Do not use a class name, as these are not necessarily unique and that can cause conflicts.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a38358211714",
+                        "operator": "==",
+                        "value": "element"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "popup"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1514519635
+}

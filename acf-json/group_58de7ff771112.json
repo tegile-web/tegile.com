@@ -1,0 +1,486 @@
+{
+    "key": "group_58de7ff771112",
+    "title": "Section Visual Settings",
+    "fields": [
+        {
+            "key": "field_58f507741a0ea",
+            "label": "Customize Background?",
+            "name": "custom-bkg",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "I want to customize the background for this section",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58de86e33582a",
+            "label": "Background Image",
+            "name": "bkg-image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_58de8cb890aea",
+            "label": "Background Color",
+            "name": "bkg-color",
+            "type": "swatch",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#FBFBFB": "Off-White",
+                "#444444": "Graphite",
+                "#1C5EA1": "Tegile Blue",
+                "#1C83EA": "Sky Blue",
+                "#00E598": "Turquoise",
+                "#ED573D": "Orange Soda"
+            },
+            "allow_null": 1,
+            "default_value": "",
+            "layout": "vertical",
+            "other_choice": 0,
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_58de8ac23582d",
+            "label": "Background Settings",
+            "name": "bkg-settings",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "no-repeat scroll center center",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_590396ed2b3da",
+            "label": "Background Size",
+            "name": "bkg-size",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "cover",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5903994eec7c1",
+            "label": "Background Modifiers",
+            "name": "bkg-modifiers",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58de934e4726b",
+            "label": "Color Filter",
+            "name": "filter-preset",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "blue": "Blue",
+                "turquoise": "Turquoise",
+                "aqua": "Aqua",
+                "miami-heat": "Miami Hear",
+                "eighties": "80's",
+                "midnight": "Midnight",
+                "slate": "Slate",
+                "graphite": "Graphite",
+                "charcoal": "Charcoal",
+                "smoke": "Smoke"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58de94934726c",
+            "label": "Filter Strength",
+            "name": "filter-strength",
+            "type": "Range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58de934e4726b",
+                        "operator": "!=",
+                        "value": ""
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "slider_type": "default",
+            "title": "",
+            "prepend": "",
+            "append": "%",
+            "separate": "-",
+            "default_value_1": 0,
+            "default_value_2": 100,
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "font_size": 14
+        },
+        {
+            "key": "field_58de94f14726d",
+            "label": "Pattern Overlay",
+            "name": "film-preset",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "noise": "Noise",
+                "grid": "Grid",
+                "dots": "Dots",
+                "matrix": "Matrix"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_58de951d4726e",
+            "label": "Overlay Strength",
+            "name": "film-strength",
+            "type": "Range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58de94f14726d",
+                        "operator": "!=",
+                        "value": ""
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "slider_type": "default",
+            "title": "",
+            "prepend": "",
+            "append": "%",
+            "separate": "-",
+            "default_value_1": 0,
+            "default_value_2": 100,
+            "min": 0,
+            "max": 100,
+            "step": 5,
+            "font_size": 14
+        },
+        {
+            "key": "field_58f4fead37ce9",
+            "label": "Overlay Zoom",
+            "name": "film-zoom",
+            "type": "Range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58de94f14726d",
+                        "operator": "!=",
+                        "value": ""
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": ""
+            },
+            "slider_type": "default",
+            "title": "",
+            "prepend": "",
+            "append": "%",
+            "separate": "-",
+            "default_value_1": 1,
+            "default_value_2": 100,
+            "min": 2,
+            "max": 25,
+            "step": 1,
+            "font_size": 14
+        },
+        {
+            "key": "field_58f4fd0237ce8",
+            "label": "Overlay Brightness",
+            "name": "film-brightness",
+            "type": "Range",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58de94f14726d",
+                        "operator": "!=",
+                        "value": ""
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": ""
+            },
+            "slider_type": "default",
+            "title": "",
+            "prepend": "",
+            "append": "x",
+            "separate": "-",
+            "default_value_1": 1,
+            "default_value_2": 100,
+            "min": 1,
+            "max": 10,
+            "step": ".5",
+            "font_size": 14
+        },
+        {
+            "key": "field_58f7f44cc76a8",
+            "label": "Overlay Modifiers",
+            "name": "film-class",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58de94f14726d",
+                        "operator": "!=",
+                        "value": ""
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58de95cd299d3",
+            "label": "Text Color",
+            "name": "text-color",
+            "type": "swatch",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58f507741a0ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "#FBFBFB": "Off-White",
+                "#222222": "Charcoal",
+                "#1C5EA1": "Tegile Blue",
+                "#1C83EA": "Sky Blue",
+                "#00E598": "Turquoise",
+                "#ED573D": "Orange Soda"
+            },
+            "allow_null": 1,
+            "default_value": "",
+            "layout": "horizontal",
+            "other_choice": 0,
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1514519617
+}

@@ -1,0 +1,170 @@
+{
+    "key": "group_59ee0b9a24e57",
+    "title": "Naspo Contracts",
+    "fields": [
+        {
+            "key": "field_59ee2edaf4da0",
+            "label": "State Addendum Number",
+            "name": "state_addendum_number",
+            "type": "text",
+            "instructions": "Please be sure to upload the participating addendum doc to the the state specific naspo folder on the server (\/naspo\/[STATE_NAME]).\r\n\r\nMake sure to follow the proper naming convention:\r\n\r\n[STATE_NAME]-participating-addendum-[CONTRACT_NUMBER].pdf\r\n\r\nie: california-participating-addendum-7-15-70-34-005.pdf",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59ef5cc66b517",
+            "label": "State Addendum Document",
+            "name": "state_addendum_document",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59ee187ea0b48",
+            "label": "Additional Addendums",
+            "name": "additional_addendums",
+            "type": "repeater",
+            "instructions": "If there are any additional addendums, please be sure to upload them to the the state specific naspo folder on the server (\/naspo\/[STATE_NAME]).\r\n\r\nMake sure to follow the proper naming convention:\r\n\r\n[STATE_NAME]-additional-addendums-[TYPE]-[MM-DD-YYYY].pdf\r\n\r\nContract Extension:\r\ncalifornia-additional-addendums-extension-03-30-2018.pdf\r\n\r\nTerms Adjustment:\r\ncalifornia-additional-addendums-terms-10-22-2017.pdf",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_59efaa22cdc53",
+                    "label": "Addendum Type",
+                    "name": "type",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59ef5d166b518",
+                    "label": "Addendum Date",
+                    "name": "date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "F j, Y",
+                    "return_format": "F j, Y",
+                    "first_day": 0
+                },
+                {
+                    "key": "field_59ef5d3c6b519",
+                    "label": "Addendum Doc",
+                    "name": "doc",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_59ee305cf4da1",
+            "label": "State Specific Information",
+            "name": "state_info",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "naspo_contract"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1514519584
+}
