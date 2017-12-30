@@ -182,7 +182,7 @@ gulp.task('git-add', function() {
 gulp.task('git-commit', function() {
   
   return gulp.src('.')
-    .pipe(git.commit('Theme changes committed by Gulp-Git' + new Date().toLocaleString()));
+    .pipe(git.commit('Theme changes committed by Gulp-Git - ' + new Date().toLocaleString()));
 });
 
 // Task to perform 'git push'
