@@ -182,7 +182,7 @@ gulp.task('git-add', function() {
 gulp.task('git-commit', function() {
   
   return gulp.src('.')
-    .pipe(git.commit('Theme changes committed by Gulp-Git'));
+    .pipe(git.commit('Theme changes committed by Gulp-Git' + new Date().toLocaleString()));
 });
 
 // Task to perform 'git push'
@@ -206,8 +206,8 @@ gulp.task('git-status', function(){
 });
 
 gulp.task('deploy', function() {
-  order(//'git-add',
-        //'git-commit',
+  order('git-add',
+        'git-commit',
         'git-push',
         'git-status'
   );
