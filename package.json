@@ -16,6 +16,7 @@
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
+    "gulp-git": "^2.5.0",
     "gulp-include": "^2.3.1",
     "gulp-jshint": "^2.0.4",
     "gulp-notify": "^3.0.0",
@@ -29,6 +30,7 @@
     "jshint-stylish": "^2.2.1",
     "pixrem": "^4.0.1",
     "postcss-clean": "^1.1.0",
-    "postcss-csso": "^3.0.0"
+    "postcss-csso": "^3.0.0",
+    "run-sequence": "^2.2.0"
   }
 }

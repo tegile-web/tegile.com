@@ -5,8 +5,10 @@ REQUIRED STUFF
 
 // Main Dependencies
 var gulp        = require('gulp');
+var git         = require('gulp-git');                  // Perform GIT operations on the parent git repo
 var maps        = require('gulp-sourcemaps');           // Generate Source Maps
 var rebase      = require('gulp-rename');               // Rename files and/or extensions
+var order       = require('run-sequence');              // Run tasks in sequence
 
 // CSS Dependencies
 var sass        = require('gulp-sass');                 // Sass processing module 
@@ -41,10 +43,6 @@ PATHS
 */
 
 var mainSassSrc = './assets/scss/**/*.scss';
-
-var mainSass = './assets/scss/style.scss';
-var formSass = './assets/scss/form_scss/forms.scss';
-
 var cssDest = './assets/css/';
 
 // var customjs = 'js/scripts.js';
@@ -77,8 +75,7 @@ PHP
 
 gulp.task('php', function() {
 
-  // Need some FTP or GIT Equivalent
-  // reload.reload();
+  runSequence('deploy');
 
 });
 
@@ -90,6 +87,11 @@ CSS
 
 gulp.task('style', function() {
 
+  order('compile-css','deploy');
+});
+
+gulp.task('compile-css', function() {
+
   var plugins = [
     pixrem(),
     prefix({browsers: ['last 2 version']}),
@@ -98,7 +100,7 @@ gulp.task('style', function() {
   ];
 
   
-  gulp.src(mainSassSrc)
+  return gulp.src(mainSassSrc)
     .pipe(maps.init())
     .pipe(sass({
       compass: false,
@@ -164,6 +166,50 @@ gulp.task('js-alt', function() {
 });
 */
 
+/*
+GIT
+===
+*/
+
+// Task to perform 'git add .'
+gulp.task('git-add', function() {
+  
+  return gulp.src('.')
+    .pipe(git.add());
+});
+
+// Task to perform 'git commit -m "commit message"'
+gulp.task('git-commit', function() {
+  
+  return gulp.src('.')
+    .pipe(git.commit('Theme changes committed by Gulp-Git'));
+});
+
+// Task to perform 'git push'
+gulp.task('git-push', function(){
+  
+  return gulp.src('.')
+    .pipe(git.push('origin', 'master', function(err) {
+      if (err) throw err;
+    }));
+});
+
+// Task to perform 'git status'
+gulp.task('git-status', function(){
+  
+  return gulp.src('.')
+    .pipe(git.status(function (err, stdout) {
+      if (err) throw err;
+    }));
+});
+
+gulp.task('deploy', function() {
+  order('git-add',
+        'git-commit',
+        'git-push',
+        'git-status'
+  );
+});
 
 /*
 WATCH
@@ -176,7 +222,6 @@ WATCH
 gulp.task('default', function() {
 
   gulp.watch(mainSassSrc, ['style']);
-  // gulp.watch(formSassSrc, ['form']);
   // gulp.watch(jsSrc, ['js']);
   // gulp.watch(jsAlt, ['js-alt']);
   // gulp.watch(phpSrc, ['php']);
