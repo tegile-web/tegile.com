@@ -188,19 +188,17 @@ gulp.task('git-commit', function() {
 // Task to perform 'git push'
 gulp.task('git-push', function(){
   
-  return gulp.src('.')
-    .pipe(git.push('origin', 'master', function(err) {
+  return git.push('origin', 'master', function(err) {
       if (err) throw err;
-    }));
+    });
 });
 
 // Task to perform 'git status'
 gulp.task('git-status', function(){
   
-  return gulp.src('.')
-    .pipe(git.status(function (err, stdout) {
+  return git.status(function (err, stdout) {
       if (err) throw err;
-    }));
+    });
 });
 
 gulp.task('deploy', function() {
