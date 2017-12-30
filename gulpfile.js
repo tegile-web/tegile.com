@@ -188,9 +188,8 @@ gulp.task('git-commit', function() {
 // Task to perform 'git push'
 gulp.task('git-push', function(){
   
-  return git.push('origin', 'master', function(err) {
-      if (err) handleError('git-push');
-    });
+  return git.push('origin', 'master')
+    .on('error', handleError('git-push'));
 });
 
 // Task to perform 'git status'
@@ -200,8 +199,8 @@ gulp.task('git-status', function(){
 });
 
 gulp.task('deploy', function() {
-  order('git-add',
-        'git-commit',
+  order(//'git-add',
+        //'git-commit',
         'git-push',
         'git-status'
   );
