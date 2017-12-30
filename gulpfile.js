@@ -1,7 +1,6 @@
-/*
-REQUIRED STUFF
-==============
-*/
+/******************
+ * REQUIRED STUFF *
+ *****************/
 
 // Main Dependencies
 var gulp        = require('gulp');
@@ -37,10 +36,10 @@ var exec        = require('child_process').exec;
 // var reload      = require('gulp-livereload');
 
 
-/*
-PATHS
-=====
-*/
+
+/****************
+ * PATHS & VARS *
+ ***************/
 
 var mainSassSrc = './assets/scss/**/*.scss';
 var cssDest = './assets/css/';
@@ -51,10 +50,11 @@ var cssDest = './assets/css/';
 // var phpSrc = '**/*.php';
 // var jsDest = 'js';
 
-/*
-ERROR HANDLING
-==============
-*/
+
+
+/******************
+ * ERROR HANDLING *
+ *****************/
 
 var handleError = function(task) {
   return function(err) {
@@ -68,10 +68,10 @@ var handleError = function(task) {
 };
 
 
-/*
-PHP
-===
-*/
+
+/************
+ * PHP TASK *
+ ***********/
 
 gulp.task('php', function() {
 
@@ -80,10 +80,10 @@ gulp.task('php', function() {
 });
 
 
-/*
-CSS
-===
-*/
+
+/************
+ * CSS TASK *
+ ***********/
 
 gulp.task('style', function() {
 
@@ -130,10 +130,10 @@ gulp.task('compile-css', function() {
 });
 
 
-/*
-JAVACSRIPT
-==========
-*/
+
+/*******************
+ * JAVACSRIPT TASK *
+ ******************/
 
 /*
 gulp.task('js', function() {
@@ -166,10 +166,11 @@ gulp.task('js-alt', function() {
 });
 */
 
-/*
-GIT
-===
-*/
+
+
+/*************
+ * GIT TASKS *
+ ************/
 
 // Task to perform 'git add .'
 gulp.task('git-add', function() {
@@ -213,10 +214,11 @@ gulp.task('deploy', function() {
   );
 });
 
-/*
-WATCH
-=====
-*/
+
+
+/*****************
+ * WATCHER TASKS *
+ ****************/
 
 // Need some FTP or GIT Equivalent
 // reload.listen();
