@@ -2615,91 +2615,6 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_5a57c919140fb",
-                                    "label": "Equalize?",
-                                    "name": "equalize",
-                                    "type": "true_false",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "30",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "message": "",
-                                    "default_value": 1,
-                                    "ui": 1,
-                                    "ui_on_text": "",
-                                    "ui_off_text": ""
-                                },
-                                {
-                                    "key": "field_5a57c93a140fc",
-                                    "label": "Image Width",
-                                    "name": "image-width",
-                                    "type": "Range",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": [
-                                        [
-                                            {
-                                                "field": "field_5a57c919140fb",
-                                                "operator": "!=",
-                                                "value": "1"
-                                            }
-                                        ]
-                                    ],
-                                    "wrapper": {
-                                        "width": "70",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "slider_type": "default",
-                                    "title": "",
-                                    "prepend": "",
-                                    "append": "%",
-                                    "separate": "-",
-                                    "default_value_1": 60,
-                                    "default_value_2": "",
-                                    "min": 50,
-                                    "max": 100,
-                                    "step": 5,
-                                    "font_size": 14
-                                },
-                                {
-                                    "key": "field_5a57c9c3140fd",
-                                    "label": "Container Height",
-                                    "name": "container-height",
-                                    "type": "Range",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": [
-                                        [
-                                            {
-                                                "field": "field_5a57c919140fb",
-                                                "operator": "==",
-                                                "value": "1"
-                                            }
-                                        ]
-                                    ],
-                                    "wrapper": {
-                                        "width": "70",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "slider_type": "default",
-                                    "title": "",
-                                    "prepend": "",
-                                    "append": "vh",
-                                    "separate": "-",
-                                    "default_value_1": 15,
-                                    "default_value_2": "",
-                                    "min": 10,
-                                    "max": 35,
-                                    "step": 1,
-                                    "font_size": 14
-                                },
-                                {
                                     "key": "field_5a57c8ec140fa",
                                     "label": "Image-Pop?",
                                     "name": "image-pop",
@@ -2784,6 +2699,91 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_5a57ceee1873b",
+                            "label": "Equalize Images?",
+                            "name": "equalize",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5a57cf341873c",
+                            "label": "Image Width",
+                            "name": "image-width",
+                            "type": "Range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a57ceee1873b",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "slider_type": "default",
+                            "title": "",
+                            "prepend": "",
+                            "append": "%",
+                            "separate": "-",
+                            "default_value_1": 80,
+                            "default_value_2": "",
+                            "min": 50,
+                            "max": 100,
+                            "step": 5,
+                            "font_size": 14
+                        },
+                        {
+                            "key": "field_5a57cf841873d",
+                            "label": "Image Height",
+                            "name": "image-height",
+                            "type": "Range",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a57ceee1873b",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "slider_type": "default",
+                            "title": "",
+                            "prepend": "",
+                            "append": "vh",
+                            "separate": "-",
+                            "default_value_1": 15,
+                            "default_value_2": "",
+                            "min": 10,
+                            "max": 35,
+                            "step": 1,
+                            "font_size": 14
                         },
                         {
                             "key": "field_58dd1d3e19b7a",
@@ -3087,5 +3087,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1515703460
+    "modified": 1515704305
 }
