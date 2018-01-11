@@ -2534,6 +2534,25 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_5a57b68c43910",
+                            "label": "Blurb",
+                            "name": "blurb",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
                             "key": "field_58dd1c7a19b75",
                             "label": "Columns",
                             "name": "columns",
@@ -2964,5 +2983,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1514519600
+    "modified": 1515697820
 }
