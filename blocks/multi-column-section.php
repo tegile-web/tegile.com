@@ -1,10 +1,13 @@
 <?php
     
-    // echo '<pre>';
+    echo '<pre>';
 
     $header = get_sub_field('header');
     $blurb = get_sub_field('blurb');
     $section_size = get_sub_field('size');
+
+    echo $blurb;
+    echo '</pre>';
 
     // NEED TO ADD THIS CTA FIELD SOMEWHERE
     $cta = get_sub_field('cta');
