@@ -97,7 +97,7 @@
         <?php endif; ?>
 
         <?php if ($blurb): ?>
-            <div class="text-center margin-top-bottom-400rem"><?php echo $blurb; ?></div>
+            <div class="text-center margin-bottom-400rem"><?php echo $blurb; ?></div>
         <?php endif; ?>
 
         <?php echo implode('', $columns); ?>
