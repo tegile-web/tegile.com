@@ -65,7 +65,7 @@
             if ($link) {
 
                 $columns[$i]['link'] = '<p class="floor-link">'.button_generator( $link ).'</p>';
-                $columns[$i]['link'] .= ( ($i==12/$rows) ? ('') : ('<div class="clear200rem show-for-small-only"></div>') );
+                // $columns[$i]['link'] .= ( ($i==12/$rows) ? ('') : ('<div class="clear200rem show-for-small-only"></div>') );
 
                 if (isset($columns[$i]['image'])) {
 
@@ -76,6 +76,8 @@
             }
 
             $columns[$i] = implode('',$columns[$i]);
+
+            $columns[$i] .= ( ($i==12/$rows) ? ('') : ('<div class="clear200rem show-for-small-only"></div>') );
 
             $columns[$i] = '<div class="collapse small-12 medium-'.$rows.' columns small-only-text-center">'.$columns[$i].'</div>';
             
