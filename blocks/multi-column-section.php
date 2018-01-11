@@ -3,6 +3,7 @@
     // echo '<pre>';
 
     $header = get_sub_field('header');
+    $blurb = get_sub_field('blurb');
     $section_size = get_sub_field('size');
 
     // NEED TO ADD THIS CTA FIELD SOMEWHERE
@@ -93,6 +94,10 @@
 
         <?php if ($header): ?>
             <h2 class="text-center margin-bottom-200rem"><?php echo $header; ?></h2>
+        <?php endif; ?>
+
+        <?php if ($blurb): ?>
+            <div class="text-center margin-bottom-200rem"><?php echo $blurb; ?></div>
         <?php endif; ?>
 
         <?php echo implode('', $columns); ?>

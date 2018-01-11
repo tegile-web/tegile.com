@@ -47,7 +47,7 @@ var cssDest = './assets/css/';
 // var customjs = 'js/scripts.js';
 // var jsSrc = 'js/src/**/*.js';
 // var jsAlt = 'js/alt/**/*.js';g
-// var phpSrc = '**/*.php';
+var phpSrc = '**/*.php';
 // var jsDest = 'js';
 
 
@@ -75,7 +75,7 @@ var handleError = function(task) {
 
 gulp.task('php', function() {
 
-  runSequence('deploy');
+  order('deploy');
 
 });
 
@@ -228,6 +228,6 @@ gulp.task('default', function() {
   gulp.watch(mainSassSrc, ['style']);
   // gulp.watch(jsSrc, ['js']);
   // gulp.watch(jsAlt, ['js-alt']);
-  // gulp.watch(phpSrc, ['php']);
+  gulp.watch(phpSrc, ['php']);
 
 });
