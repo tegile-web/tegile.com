@@ -96,9 +96,9 @@
             <h2 class="text-center margin-bottom-200rem"><?php echo $header; ?></h2>
         <?php endif; ?>
 
-        <?php if ($blurb): ?>
+        <!-- <?php if ($blurb): ?> -->
             <div class="text-center margin-bottom-200rem"><?php echo $blurb; ?></div>
-        <?php endif; ?>
+        <!-- <?php endif; ?> -->
 
         <?php echo implode('', $columns); ?>
     
