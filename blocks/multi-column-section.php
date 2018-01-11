@@ -93,7 +93,7 @@
     <div class="row main-row">
 
         <?php if ($header): ?>
-            <h2 class="text-center margin-bottom-200rem this-is-a-section"><?php echo $header; ?></h2>
+            <h2 class="text-center margin-bottom-200rem"><?php echo $header; ?></h2>
         <?php endif; ?>
 
         <?php if ($blurb): ?>
