@@ -86,6 +86,10 @@
     // echo '</pre>';
 ?>
 
+<script type="text/javascript">
+    alert("<?php echo $blurb; ?>");
+</script>
+
 <!-- Main Row -->
 <a id="<?php the_sub_field('id') ?>"></a>
 <div class="row-wide section-multi-column <?php echo $modifiers; ?>">
