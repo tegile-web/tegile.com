@@ -1196,8 +1196,6 @@ img {
 }
 
 .section-multi-column .equalize-columns {
-    
-    margin-bottom: 2rem;
 
     @media #{$small-screen} {
 
@@ -1205,6 +1203,8 @@ img {
         max-width: 80% !important;
         margin: 0 auto;
     }
+
+    margin-bottom: 2rem;
 
     & img {
 
