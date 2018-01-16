@@ -1,6 +1,6 @@
 <?php
     
-    // echo '<pre>';
+    echo '<pre>';
 
     $header = get_sub_field('header');
     $blurb = get_sub_field('blurb');
@@ -17,7 +17,13 @@
 
     if ($equalize) {
         $container_height = 'max-height: '.get_sub_field('image-height').'vh !important;';
+    } else {
+        $image_width = 'width: '.get_sub_field('image-width').'% !important;';
     }
+
+    echo $image_width;
+
+    echo '</pre>';
 
     $rows = count(get_sub_field('columns'));
     $rows = 12 / $rows;
@@ -57,8 +63,6 @@
 
                     $columns[$i]['image'] = '<div class="equalize-columns" style="'.$container_height.'">' . $columns[$i]['image'] . '</div>';
                 } else {
-
-                    $image_width = 'width: '.get_sub_field('image-width').'% !important;';
 
                     $columns[$i]['image'] .= ' style="'.$image_width.'" />';
                 }
