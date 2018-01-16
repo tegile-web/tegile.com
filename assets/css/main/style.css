@@ -13055,7 +13055,7 @@ img.image-pop {
     margin: 0 !important;
     width: auto !important;
     max-width: 100% !important;
-    height: 100% !important; }
+    max-height: 100% !important; }
 
 /************************************************
 
