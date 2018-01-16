@@ -9,8 +9,16 @@
     // NEED TO ADD THIS CTA FIELD SOMEWHERE
     $cta = get_sub_field('cta');
 
-    $modifiers = get_sub_field('modifiers') . ' section-size-' . $section_size;
+    $modifiers = get_sub_field('modifiers');
+    $modifiers = $modifiers . ' section-size-' . $section_size;
     $modifiers .= (get_sub_field('divider') ? ' section-divider' : '');
+
+    $equalize = get_sub_field('equalize');
+
+    if ($equalize) {
+        $container_height = 'max-height: '.get_sub_field('image-height').'vh !important;';
+        $image_width = 'width: '.get_sub_field('image-width').'% !important;';
+    }
 
     $rows = count(get_sub_field('columns'));
     $rows = 12 / $rows;
@@ -39,8 +47,20 @@
             if ($image) {
 
                 $placeholder = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+
+                $img_modifiers = get_sub_field('image-modifiers') . (get_sub_field('image-pop') ? ' image-pop' : '');
                 
-                $columns[$i]['image'] = '<img data-sizes="auto" class="lazyload margin-bottom-100rem '.get_sub_field('image-modifiers').'" src="'.$placeholder.'" data-src="'.$image['url'].'" alt="'.$image['alt'].'" />';
+                $columns[$i]['image'] = '<img data-sizes="auto" class="lazyload '.$img_modifiers.'" src="'.$placeholder.'" data-src="'.$image['url'].'" alt="'.$image['alt'].'"';
+
+                if ($equalize) {
+
+                    $columns[$i]['image'] .= ' style="'.$image_width.'" />';
+
+                    $columns[$i]['image'] = '<div class="equalize-columns" style="'.$container_height.'">' . $columns[$i]['image'] . '</div>';
+                } else {
+
+                    $columns[$i]['image'] .= ' />';
+                }
 
             } else {
 
