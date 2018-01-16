@@ -16,7 +16,7 @@
     $equalize = get_sub_field('equalize');
 
     if ($equalize) {
-        $container_height = 'max-height: '.get_sub_field('image-height').'vh !important;';
+        $container_height = 'height: '.get_sub_field('image-height').'vh !important;';
     } else {
         $image_width = 'width: '.get_sub_field('image-width').'% !important;';
     }
