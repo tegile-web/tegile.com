@@ -13041,6 +13041,9 @@ img.image-pop {
 /*************************
  *  Multi-Column Styles  *
 **************************/
+.section-multi-column img {
+  margin-bottom: 1rem; }
+
 .section-multi-column .equalize-columns {
   margin-bottom: 2rem; }
   .section-multi-column .equalize-columns img {
