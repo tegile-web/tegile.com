@@ -49,7 +49,16 @@
 
                 $placeholder = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
-                $img_modifiers = get_sub_field('image-modifiers') . (get_sub_field('image-pop') ? ' image-pop' : '');
+                // NEED TO ADJUST THIS AFTER WE CORRECT ALL INSTANCES OF MULTI-COLUMN SECTIONS USING OLD STYLE
+                $img_modifiers = get_sub_field('image-modifiers');
+
+                if ($img_modifiers) {
+
+                    $image_width = '';
+                } else {
+
+                    $img_modifiers .= (get_sub_field('image-pop') ? ' image-pop' : '');
+                }
                 
                 $columns[$i]['image'] = '<img data-sizes="auto" class="lazyload '.$img_modifiers.'" src="'.$placeholder.'" data-src="'.$image['url'].'" alt="'.$image['alt'].'"';
 
