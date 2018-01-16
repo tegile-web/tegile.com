@@ -1,6 +1,6 @@
 <?php
     
-    echo '<pre>';
+    // echo '<pre>';
 
     $header = get_sub_field('header');
     $blurb = get_sub_field('blurb');
@@ -20,10 +20,6 @@
     } else {
         $image_width = 'width: '.get_sub_field('image-width').'% !important;';
     }
-
-    echo $image_width;
-
-    echo '</pre>';
 
     $rows = count(get_sub_field('columns'));
     $rows = 12 / $rows;
