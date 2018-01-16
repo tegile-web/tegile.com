@@ -17,6 +17,7 @@
 
     if ($equalize) {
         $container_height = 'max-height: '.get_sub_field('image-height').'vh !important;';
+    } else {
         $image_width = 'width: '.get_sub_field('image-width').'% !important;';
     }
 
@@ -54,12 +55,12 @@
 
                 if ($equalize) {
 
-                    $columns[$i]['image'] .= ' style="'.$image_width.'" />';
+                    $columns[$i]['image'] .= ' />';
 
                     $columns[$i]['image'] = '<div class="equalize-columns" style="'.$container_height.'">' . $columns[$i]['image'] . '</div>';
                 } else {
 
-                    $columns[$i]['image'] .= ' />';
+                    $columns[$i]['image'] .= ' style="'.$image_width.'" />';
                 }
 
             } else {
