@@ -440,11 +440,21 @@ function poll_for_popups() {
     // Load Ouibounce script for Popup Launch Functionality if required
     // wp_enqueue_script( 'ouibounce-js', get_template_directory_uri() . 'https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.min.js', array( 'jquery' ), '', true );
 
-    echo '<pre>';
-    print_r($popups);
-    print_r($the_page);
-    print_r($the_user);
-    echo '</pre>';
+    $url = $_SERVER['HTTP_HOST'];
+    $url = array_shift(explode(".",$url));
+
+    switch ($url) {
+        case 'dev':
+            echo '<pre>';
+            print_r($popups);
+            print_r($the_page);
+            print_r($the_user);
+            echo '</pre>';
+            break;
+        default:
+            // Do Nothing
+            break;
+    }
 }
 add_action('wp_footer', 'poll_for_popups');
 
