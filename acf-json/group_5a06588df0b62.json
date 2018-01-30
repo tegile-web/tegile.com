@@ -75,7 +75,7 @@
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "30",
                 "class": "",
                 "id": ""
             },
@@ -86,6 +86,25 @@
             "min": 1000,
             "max": "",
             "step": ""
+        },
+        {
+            "key": "field_5a70a8c57fb9c",
+            "label": "Form Header",
+            "name": "form_head",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Let's Get in Touch",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_5a06592c63d04",
@@ -345,5 +364,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1514519580
+    "modified": 1517332738
 }
