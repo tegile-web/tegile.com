@@ -2,7 +2,7 @@
 
 // Enqueue the Marketo Forms 2.0 Script and our Custom Form CSS
 wp_enqueue_script( 'Forms2', '//app-sj05.marketo.com/js/forms2/js/forms2.min.js', 'jquery' );
-wp_enqueue_style( 'Tegile-Forms', get_template_directory_uri() . '/assets/css/forms.min.css', 'site-css' );
+wp_enqueue_style( 'Tegile-Forms', get_template_directory_uri() . '/assets/css/form/forms.min.css', 'site-css' );
 
 ?>
 
