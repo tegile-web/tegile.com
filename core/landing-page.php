@@ -172,7 +172,7 @@ wp_enqueue_style( 'Tegile-Forms', get_template_directory_uri() . '/assets/css/fo
 
                     <h3><?php the_field('form_head'); ?></h3>
 
-                    <!-- <span class="form-sub-text">Static form sub-text will go here.  This cannot currently be changed.</span> -->
+                    <span class="form-sub-text"><?php the_field('form_sub'); ?></span>
 
                     <form id="mktoForm_<?php the_field('form'); ?>"></form>
 
