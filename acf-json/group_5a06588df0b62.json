@@ -212,7 +212,7 @@
                     "name": "text",
                     "type": "textarea",
                     "instructions": "Try to keep it between 150 - 300 characters.  No HTML tags.",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -364,5 +364,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1517332738
+    "modified": 1517333162
 }
