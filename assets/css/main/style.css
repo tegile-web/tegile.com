@@ -7290,7 +7290,7 @@ p {
   font-weight: 200; }
   p {
     font-size: 1rem; }
-    @media screen and (min-width: 43.75rem) {
+    @media screen and (min-width: 43.75rem) and (max-width: 80rem) {
       p {
         font-size: calc(1rem + 0.25 * ((100vw - 43.75rem) / 36.25)); } }
     @media screen and (min-width: 80rem) {
@@ -7313,7 +7313,7 @@ h2, .h2 {
   text-transform: uppercase; }
   h2, .h2 {
     font-size: 1.5rem; }
-    @media screen and (min-width: 43.75rem) {
+    @media screen and (min-width: 43.75rem) and (max-width: 80rem) {
       h2, .h2 {
         font-size: calc(1.5rem + 0.5 * ((100vw - 43.75rem) / 36.25)); } }
     @media screen and (min-width: 80rem) {
@@ -7324,7 +7324,7 @@ h3, .h3 {
   font-weight: 900; }
   h3, .h3 {
     font-size: 1.125rem; }
-    @media screen and (min-width: 43.75rem) {
+    @media screen and (min-width: 43.75rem) and (max-width: 80rem) {
       h3, .h3 {
         font-size: calc(1.125rem + 0.375 * ((100vw - 43.75rem) / 36.25)); } }
     @media screen and (min-width: 80rem) {
@@ -10339,7 +10339,7 @@ Stylesheet: Typography Stylesheet
   line-height: 1; }
   .font-size-h1-hero-bold {
     font-size: 2.5rem; }
-    @media screen and (min-width: 37.5rem) {
+    @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
       .font-size-h1-hero-bold {
         font-size: calc(2.5rem + 2.5 * ((100vw - 37.5rem) / 42.5)); } }
     @media screen and (min-width: 80rem) {
@@ -10347,7 +10347,7 @@ Stylesheet: Typography Stylesheet
         font-size: 5rem; } }
   .font-size-h1-hero-bold {
     padding-bottom: 1.5rem; }
-    @media screen and (min-width: 43.75rem) {
+    @media screen and (min-width: 43.75rem) and (max-width: 80rem) {
       .font-size-h1-hero-bold {
         padding-bottom: calc(1.5rem + 1.5 * ((100vw - 43.75rem) / 36.25)); } }
     @media screen and (min-width: 80rem) {
@@ -10358,7 +10358,7 @@ Stylesheet: Typography Stylesheet
     padding-bottom: 2rem; }
     .font-size-h1-hero-bold.single-title {
       font-size: 3rem; }
-      @media screen and (min-width: 37.5rem) {
+      @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
         .font-size-h1-hero-bold.single-title {
           font-size: calc(3rem + 1 * ((100vw - 37.5rem) / 42.5)); } }
       @media screen and (min-width: 80rem) {
@@ -10383,7 +10383,7 @@ article .article-header h2 a {
   article .article-header h2,
   article .article-header h2 a {
     font-size: 1.5rem; }
-    @media screen and (min-width: 37.5rem) {
+    @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
       article .article-header h2,
       article .article-header h2 a {
         font-size: calc(1.5rem + 0.5 * ((100vw - 37.5rem) / 42.5)); } }
@@ -10570,7 +10570,7 @@ article .article-header h2 a {
   #page-standard-new .section-blockquote blockquote,
   #page-full-width-landing-page-new .section-blockquote blockquote {
     font-size: 1.125rem; }
-    @media screen and (min-width: 43.75rem) {
+    @media screen and (min-width: 43.75rem) and (max-width: 80rem) {
       #page-standard-new .section-blockquote blockquote,
       #page-full-width-landing-page-new .section-blockquote blockquote {
         font-size: calc(1.125rem + 0.125 * ((100vw - 43.75rem) / 36.25)); } }
@@ -10595,7 +10595,7 @@ article .article-header h2 a {
     #page-standard-new .section-blockquote blockquote footer,
     #page-full-width-landing-page-new .section-blockquote blockquote footer {
       font-size: 0.75rem; }
-      @media screen and (min-width: 43.75rem) {
+      @media screen and (min-width: 43.75rem) and (max-width: 80rem) {
         #page-standard-new .section-blockquote blockquote footer,
         #page-full-width-landing-page-new .section-blockquote blockquote footer {
           font-size: calc(0.75rem + 0.1 * ((100vw - 43.75rem) / 36.25)); } }
@@ -10640,7 +10640,7 @@ article .article-header h2 a {
     #page-standard-new .section-blockquote blockquote:before,
     #page-full-width-landing-page-new .section-blockquote blockquote:before {
       font-size: 10rem; }
-      @media screen and (min-width: 43.75rem) {
+      @media screen and (min-width: 43.75rem) and (max-width: 80rem) {
         #page-standard-new .section-blockquote blockquote:before,
         #page-full-width-landing-page-new .section-blockquote blockquote:before {
           font-size: calc(10rem + 2 * ((100vw - 43.75rem) / 36.25)); } }
@@ -11587,7 +11587,7 @@ Stylesheet: Hero Banner Stylesheet
     #page-standard-new .hero-banner h1,
     #page-full-width-landing-page-new .hero-banner h1 {
       font-size: 2.5rem; }
-      @media screen and (min-width: 37.5rem) {
+      @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
         .single-content_hub .hero-banner h1,
         .single-landing_page .hero-banner h1,
         #page-standard-new .hero-banner h1,
@@ -11604,7 +11604,7 @@ Stylesheet: Hero Banner Stylesheet
     #page-standard-new .hero-banner h1,
     #page-full-width-landing-page-new .hero-banner h1 {
       padding-bottom: 1.5rem; }
-      @media screen and (min-width: 43.75rem) {
+      @media screen and (min-width: 43.75rem) and (max-width: 80rem) {
         .single-content_hub .hero-banner h1,
         .single-landing_page .hero-banner h1,
         #page-standard-new .hero-banner h1,
@@ -11628,7 +11628,7 @@ Stylesheet: Hero Banner Stylesheet
     #page-standard-new .hero-banner h2,
     #page-full-width-landing-page-new .hero-banner h2 {
       font-size: 1rem; }
-      @media screen and (min-width: 37.5rem) {
+      @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
         .single-content_hub .hero-banner h2,
         .single-landing_page .hero-banner h2,
         #page-standard-new .hero-banner h2,
@@ -11748,7 +11748,7 @@ Stylesheet: Hero Banner Stylesheet
     #page-full-width-landing-page-new .hero-banner .hero-bottom-left h1,
     #page-full-width-landing-page-new .hero-banner .hero-bottom-right h1 {
       padding-bottom: 1rem; }
-      @media screen and (min-width: 43.75rem) {
+      @media screen and (min-width: 43.75rem) and (max-width: 80rem) {
         .single-content_hub .hero-banner .hero-bottom-left h1,
         .single-content_hub .hero-banner .hero-bottom-right h1,
         .single-landing_page .hero-banner .hero-bottom-left h1,
@@ -11777,7 +11777,7 @@ Stylesheet: Hero Banner Stylesheet
     #page-full-width-landing-page-new .hero-banner .hero-bottom-left h2,
     #page-full-width-landing-page-new .hero-banner .hero-bottom-right h2 {
       font-size: 1.5rem; }
-      @media screen and (min-width: 37.5rem) {
+      @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
         .single-content_hub .hero-banner .hero-bottom-left h2,
         .single-content_hub .hero-banner .hero-bottom-right h2,
         .single-landing_page .hero-banner .hero-bottom-left h2,
@@ -12996,7 +12996,7 @@ img.image-pop {
     color: #222222; }
     .sidebar.naspo-sidebar .banner h1 {
       font-size: 1rem; }
-      @media screen and (min-width: 37.5rem) {
+      @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
         .sidebar.naspo-sidebar .banner h1 {
           font-size: calc(1rem + 0.5 * ((100vw - 37.5rem) / 42.5)); } }
       @media screen and (min-width: 80rem) {
@@ -13004,7 +13004,7 @@ img.image-pop {
           font-size: 1.5rem; } }
   .sidebar.naspo-sidebar .banner h2 {
     font-size: 0.875rem; }
-    @media screen and (min-width: 37.5rem) {
+    @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
       .sidebar.naspo-sidebar .banner h2 {
         font-size: calc(0.875rem + 0.375 * ((100vw - 37.5rem) / 42.5)); } }
     @media screen and (min-width: 80rem) {
@@ -13012,7 +13012,7 @@ img.image-pop {
         font-size: 1.25rem; } }
   .sidebar.naspo-sidebar .banner a {
     font-size: 0.75rem; }
-    @media screen and (min-width: 37.5rem) {
+    @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
       .sidebar.naspo-sidebar .banner a {
         font-size: calc(0.75rem + 0.375 * ((100vw - 37.5rem) / 42.5)); } }
     @media screen and (min-width: 80rem) {
@@ -13649,7 +13649,7 @@ header.header {
                 transition: none; }
                 header.header .nav-wrapper nav.top-bar.mega-menu ul.top-nav-menu li.top-nav-item .top-level {
                   font-size: 0.925rem; }
-                  @media screen and (min-width: 37.5rem) {
+                  @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
                     header.header .nav-wrapper nav.top-bar.mega-menu ul.top-nav-menu li.top-nav-item .top-level {
                       font-size: calc(0.925rem + 0.075 * ((100vw - 37.5rem) / 42.5)); } }
                   @media screen and (min-width: 80rem) {
@@ -13852,7 +13852,7 @@ header.header {
           header.header .mega .menu-content .container .row .columns p,
           header.header .mega .menu-content .container .row .columns span {
             font-size: 0.875rem; }
-            @media screen and (min-width: 37.5rem) {
+            @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
               header.header .mega .menu-content .container .row .columns ul,
               header.header .mega .menu-content .container .row .columns ul li,
               header.header .mega .menu-content .container .row .columns ul li a,
@@ -13937,7 +13937,7 @@ header.header {
             margin-bottom: 0.5rem; }
             header.header .mega .menu-content .container .row .columns ul.mega-menu-items li {
               font-size: 0.875rem; }
-              @media screen and (min-width: 37.5rem) {
+              @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
                 header.header .mega .menu-content .container .row .columns ul.mega-menu-items li {
                   font-size: calc(0.875rem + 0.25 * ((100vw - 37.5rem) / 42.5)); } }
               @media screen and (min-width: 80rem) {
@@ -13950,7 +13950,7 @@ header.header {
               margin-left: 0; }
               header.header .mega .menu-content .container .row .columns ul.mega-menu-items li.mega-menu-header {
                 font-size: 1rem; }
-                @media screen and (min-width: 37.5rem) {
+                @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
                   header.header .mega .menu-content .container .row .columns ul.mega-menu-items li.mega-menu-header {
                     font-size: calc(1rem + 0.25 * ((100vw - 37.5rem) / 42.5)); } }
                 @media screen and (min-width: 80rem) {
@@ -13960,7 +13960,7 @@ header.header {
                 font-weight: 500; }
                 header.header .mega .menu-content .container .row .columns ul.mega-menu-items li.mega-menu-header * {
                   font-size: 1rem; }
-                  @media screen and (min-width: 37.5rem) {
+                  @media screen and (min-width: 37.5rem) and (max-width: 80rem) {
                     header.header .mega .menu-content .container .row .columns ul.mega-menu-items li.mega-menu-header * {
                       font-size: calc(1rem + 0.25 * ((100vw - 37.5rem) / 42.5)); } }
                   @media screen and (min-width: 80rem) {

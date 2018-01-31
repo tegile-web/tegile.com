@@ -34,7 +34,8 @@ remember less is more.
         @each $prop in $props {
             #{$prop}: $min-font-size;
         }
-        @media screen and (min-width: $min-vw) {
+
+        @media screen and (min-width: $min-vw) and (max-width: $max-vw) {
             @each $prop in $props {
                 #{$prop}: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
             }
