@@ -39,13 +39,13 @@
 		<!-- End Google Tag Manager -->
 
 
-		<!-- Testing -->
+		<!-- Default Description -->
 		<?php $desc = get_post_meta(get_the_ID(),'_su_description'); if ( empty($desc) ) : ?>
 
 			<meta name="description" content="Tegile Systems is pioneering a new generation of persistent-memory storage solutions that deliver exceptional performance and economics for a wide range of enterprise applications.";>
 			
 		<?php endif; ?>
-		<!-- End Testing -->
+		<!-- End Default Description -->
 
 		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
 			<!-- Icons & Favicons -->
