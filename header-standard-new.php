@@ -38,11 +38,7 @@
 		})(window,document,'script','dataLayer','GTM-T2C93LK');</script>
 		<!-- End Google Tag Manager -->
 
-
-		<!-- Default Description -->
-		
-		<!-- End Default Description -->
-
+		<!-- Might need to uncomment this if I broke something -->
 		<!-- <title><?php wp_title('|', true, 'right'); ?></title> -->
 
 		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
