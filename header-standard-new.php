@@ -97,8 +97,11 @@
 		<!-- Testing -->
 		<pre>
 			<?php
-				print_r(get_post_custom());
+				$desc = get_post_meta($post,'_su_description');
+				print_r($desc);
+				// print_r(get_post_custom());
 				return;
+
 			?>
 		</pre>
 		<!-- End Testing -->
