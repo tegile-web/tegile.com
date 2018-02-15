@@ -39,7 +39,14 @@
 		<!-- End Google Tag Manager -->
 
 
-		<!-- <title><?php wp_title('|', true, 'right'); ?></title> -->
+		<!-- Testing -->
+		<?php $desc = get_post_meta(get_the_ID(),'_su_description'); if ( empty($desc) ) : ?>
+
+			<meta name="description" content="Tegile Systems is pioneering a new generation of persistent-memory storage solutions that deliver exceptional performance and economics for a wide range of enterprise applications.";>
+			
+		<?php endif; ?>
+		<!-- End Testing -->
+
 		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
 			<!-- Icons & Favicons -->
 			<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png?v=2">
