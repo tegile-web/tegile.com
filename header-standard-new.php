@@ -94,18 +94,6 @@
 
 	<body <?php echo 'id="' . $page_id . '"'; ?> <?php body_class(); ?>>
 
-		<!-- Testing -->
-		<?php
-			echo '<pre>';
-			$desc = get_post_meta($post,'_su_description');
-			print_r($desc);
-			// print_r(get_post_custom());
-			echo '</pre></body>';
-			return;
-
-		?>
-		<!-- End Testing -->
-
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2C93LK"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
