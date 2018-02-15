@@ -94,6 +94,14 @@
 
 	<body <?php echo 'id="' . $page_id . '"'; ?> <?php body_class(); ?>>
 
+		<!-- Testing -->
+		<pre>
+			<?php
+				print_r(get_post_custom());
+			?>
+		</pre>
+		<!-- End Testing -->
+
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2C93LK"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
