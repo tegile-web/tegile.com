@@ -4,7 +4,7 @@ Template Name: Standard Page - New (White Footer)
 */
 ?>
 
-<?php get_header("standard-new"); ?>
+<?php //get_header("standard-new"); ?>
 			
 			<!-- <div id="content"> -->
 						
@@ -21,7 +21,7 @@ Template Name: Standard Page - New (White Footer)
 
 			<!-- Testing -->
 			<?php
-				echo '<pre>';
+				echo '<body><pre>';
 				$desc = get_post_meta($post,'_su_description');
 				print_r($desc);
 				// print_r(get_post_custom());
