@@ -458,4 +458,21 @@ function poll_for_popups() {
 }
 add_action('wp_footer', 'poll_for_popups');
 
+// Redirect Tag archive pages to blog home-page
+ 
+/* Remove archives */
+function remove_wp_archives(){
+
+    // Other checks we can use
+    // is_category();
+    // is_date();
+    // is_author();
+
+    if (is_tag()) {
+        $page = '/blog/';
+        header("Location: $page",TRUE,301);
+    }
+}
+add_action('template_redirect', 'remove_wp_archives');
+
 ?>
