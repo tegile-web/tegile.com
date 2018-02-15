@@ -47,6 +47,8 @@
 		<?php endif; ?>
 		<!-- End Default Description -->
 
+		<!-- <title><?php wp_title('|', true, 'right'); ?></title> -->
+
 		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
 			<!-- Icons & Favicons -->
 			<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png?v=2">
