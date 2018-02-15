@@ -10,7 +10,7 @@ Template Name: Standard Page - New (White Footer)
 			<?php
 				$desc = get_post_meta(get_the_ID(),'_su_description');
 
-				if ( (count($desc > 0)) && ($desc[0]) ) {
+				if ( (count($desc) > 0) && ($desc[0]) ) {
 					$desc = $desc[0];
 				} else {
 					$desc = "MISSING DESCRIPTION!!!";
