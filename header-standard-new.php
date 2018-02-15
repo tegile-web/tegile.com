@@ -95,15 +95,15 @@
 	<body <?php echo 'id="' . $page_id . '"'; ?> <?php body_class(); ?>>
 
 		<!-- Testing -->
-		<pre>
-			<?php
-				$desc = get_post_meta($post,'_su_description');
-				print_r($desc);
-				// print_r(get_post_custom());
-				return;
+		<?php
+			echo '<pre>';
+			$desc = get_post_meta($post,'_su_description');
+			print_r($desc);
+			// print_r(get_post_custom());
+			echo '</pre></body>'
+			return;
 
-			?>
-		</pre>
+		?>
 		<!-- End Testing -->
 
 		<!-- Google Tag Manager (noscript) -->
