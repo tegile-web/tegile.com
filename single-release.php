@@ -36,7 +36,7 @@
     // Hacky...
     // Need to adjust the release CPT so that this isnt necessary
     // jQuery('h1').addClass('single-title font-size-h1-hero-bold');
-    jQuery('h1').addClass('single-title font-size-h2 font-weight-extrabold');
+    jQuery('h1').addClass('single-title font-size-h1 font-weight-extrabold');
 </script>
 
 <?php get_footer('standard-new'); ?>
