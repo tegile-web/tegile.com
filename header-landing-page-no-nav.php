@@ -38,14 +38,7 @@
 		})(window,document,'script','dataLayer','GTM-T2C93LK');</script>
 		<!-- End Google Tag Manager -->
 
-		<!-- Default Description -->
-		<?php $desc = get_post_meta(get_the_ID(),'_su_description'); if ( empty($desc) ) : ?>
-
-			<meta name="description" content="Tegile Systems is pioneering a new generation of persistent-memory storage solutions that deliver exceptional performance and economics for a wide range of enterprise applications.";>
-			
-		<?php endif; ?>
-		<!-- End Default Description -->
-
+		<!-- Might need to uncomment this if I broke something -->
 		<!-- <title><?php wp_title('|', true, 'right'); ?></title> -->
 		
 		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
