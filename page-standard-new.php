@@ -23,8 +23,8 @@ Template Name: Standard Page - New (White Footer)
 			<?php
 				echo '<body><pre>';
 				// $desc = get_post_custom();
-				$desc = get_post_meta(get_the_ID());
-				// $desc = get_post_meta($post,'_su_description');
+				// $desc = get_post_meta(get_the_ID());
+				$desc = get_post_meta(get_the_ID(),'_su_description');
 				print_r($desc);
 				echo '</pre></body>';
 				return;
