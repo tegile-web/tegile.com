@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="small-12 medium-8 medium-offset-1 large-9 large-offset-1 columns">
-          <h3 class="small-only-text-left no-margin-bottom"><a class="font-weight-normal" href="<?php the_field('webinar-link') ?>" target="_blank"><?php the_title() ?></a></h3>
+          <h1 class="small-only-text-left no-margin-bottom font-size-h4"><a class="font-weight-normal" href="<?php the_field('webinar-link') ?>" target="_blank"><?php the_title() ?></a></h3>
             <p class="font-weight-bold"><?php echo $date->format('F j, Y') ?> @ <?php the_field('webinar-time') ?></p>
             <?php // not sure why the_content() is not applying paragraph wrapping on content here
                   // forcing it manually - chris@duarte.com 
