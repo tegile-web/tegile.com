@@ -43,7 +43,7 @@
           <?php if(get_field('webinar-link')) :?>
             <h1 class="small-only-text-left no-margin-bottom font-size-h4"><a class="font-weight-normal" href="<?php if(get_field('webinar-link')) :?><?php echo the_field('webinar-link') ?><?php else :?><?php echo get_permalink(); ?><?php endif;?>" target="<?php if(get_field('webinar-link')) :?>_blank<?php endif;?>"><?php the_title() ?></a></h1>
           <?php else :?>
-            <h3 class="small-only-text-left no-margin-bottom"><span class="font-weight-normal"><?php the_title() ?></span></h3>
+            <h1 class="small-only-text-left no-margin-bottom font-size-h4"><span class="font-weight-normal"><?php the_title() ?></span></h1>
           <?php endif;?>
           <p class="font-weight-bold">On-Demand Webinar</p>
           <?php if(get_field('iframe-code')) :?>
