@@ -41,7 +41,7 @@
         </div>
         <div class="small-12 medium-8 medium-offset-1 large-9 large-offset-1 columns">
           <?php if(get_field('webinar-link')) :?>
-            <h1 class="small-only-text-left no-margin-bottom font-size-h4"><a class="font-weight-normal" href="<?php if(get_field('webinar-link')) :?><?php echo the_field('webinar-link') ?><?php else :?><?php echo get_permalink(); ?><?php endif;?>" target="<?php if(get_field('webinar-link')) :?>_blank<?php endif;?>"><?php the_title() ?></a></h3>
+            <h1 class="small-only-text-left no-margin-bottom font-size-h4"><a class="font-weight-normal" href="<?php if(get_field('webinar-link')) :?><?php echo the_field('webinar-link') ?><?php else :?><?php echo get_permalink(); ?><?php endif;?>" target="<?php if(get_field('webinar-link')) :?>_blank<?php endif;?>"><?php the_title() ?></a></h1>
           <?php else :?>
             <h3 class="small-only-text-left no-margin-bottom"><span class="font-weight-normal"><?php the_title() ?></span></h3>
           <?php endif;?>
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="small-12 medium-8 medium-offset-1 large-9 large-offset-1 columns">
-          <h1 class="small-only-text-left no-margin-bottom font-size-h4"><a class="font-weight-normal" href="<?php the_field('webinar-link') ?>" target="_blank"><?php the_title() ?></a></h3>
+          <h1 class="small-only-text-left no-margin-bottom font-size-h4"><a class="font-weight-normal" href="<?php the_field('webinar-link') ?>" target="_blank"><?php the_title() ?></a></h1>
             <p class="font-weight-bold"><?php echo $date->format('F j, Y') ?> @ <?php the_field('webinar-time') ?></p>
             <?php // not sure why the_content() is not applying paragraph wrapping on content here
                   // forcing it manually - chris@duarte.com 
