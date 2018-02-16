@@ -41,7 +41,7 @@
         </div>
         <div class="small-12 medium-8 medium-offset-1 large-9 large-offset-1 columns">
           <?php if(get_field('webinar-link')) :?>
-            <h3 class="small-only-text-left no-margin-bottom"><a class="font-weight-normal" href="<?php if(get_field('webinar-link')) :?><?php echo the_field('webinar-link') ?><?php else :?><?php echo get_permalink(); ?><?php endif;?>" target="<?php if(get_field('webinar-link')) :?>_blank<?php endif;?>"><?php the_title() ?></a></h3>
+            <h1 class="small-only-text-left no-margin-bottom font-size-h4"><a class="font-weight-normal" href="<?php if(get_field('webinar-link')) :?><?php echo the_field('webinar-link') ?><?php else :?><?php echo get_permalink(); ?><?php endif;?>" target="<?php if(get_field('webinar-link')) :?>_blank<?php endif;?>"><?php the_title() ?></a></h3>
           <?php else :?>
             <h3 class="small-only-text-left no-margin-bottom"><span class="font-weight-normal"><?php the_title() ?></span></h3>
           <?php endif;?>
