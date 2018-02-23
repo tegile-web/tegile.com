@@ -1,0 +1,1 @@
+<?php wp_redirect( network_site_url(), 301 ) ?>
