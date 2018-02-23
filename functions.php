@@ -401,7 +401,7 @@ function tegile_redirect_hidden_sites() {
             wp_redirect( $goto );
             die();
         } else {
-            echo '<pre>THIS IS A REDIRECT</pre>';
+            echo '<script style="text/javascript">console.log("THIS IS A REDIRECT");</script>';
             die();
         }
     }
