@@ -381,32 +381,6 @@ add_filter( 'allow_subdirectory_install',
     create_function( '', 'return true;' )
 );
 
-// Function to redirect deactivated sites to /
-function tegile_redirect_hidden_sites() {
- 
-    // Super Admins always get in
-    if ( is_super_admin() || current_user_can( 'manage_options' ) ) {
-        return true;
-    } else {
-        // Defines
-        if ( defined( 'NOBLOGREDIRECT' ) ) {
-            $goto = NOBLOGREDIRECT;
-        } else {
-            $goto = network_site_url();
-        }
- 
-        $blog = get_blog_details();
- 
-        if( '1' == $blog-&gt;deleted || '2' == $blog-&gt;deleted || '1' == $blog-&gt;archived || '1' == $blog-&gt;spam ) {
-            wp_redirect( $goto );
-            die();
-        } else {
-            wp_redirect( '/vip/' );
-            die();
-        }
-    }
-}
-add_filter('ms_site_check','tegile_redirect_hidden_sites');
 
 ############################################
 ########## NEW POPUP PLUGIN LOGIC ##########
