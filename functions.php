@@ -394,13 +394,14 @@ function tegile_redirect_hidden_sites() {
         } else {
             $goto = network_site_url();
         }
-
-        echo '<pre>THIS IS A REDIRECT</pre>';
  
         $blog = get_blog_details();
  
         if( '1' == $blog-&gt;deleted || '2' == $blog-&gt;deleted || '1' == $blog-&gt;archived || '1' == $blog-&gt;spam ) {
             wp_redirect( $goto );
+            die();
+        } else {
+            echo '<pre>THIS IS A REDIRECT</pre>';
             die();
         }
     }
