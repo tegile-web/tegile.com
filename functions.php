@@ -394,6 +394,8 @@ function tegile_redirect_hidden_sites() {
         } else {
             $goto = network_site_url();
         }
+
+        echo '<pre>THIS IS A REDIRECT</pre>';
  
         $blog = get_blog_details();
  
