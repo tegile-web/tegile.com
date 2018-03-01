@@ -162,12 +162,11 @@
                         <h2>Quick Links</h2>
                         <div class="sidebar-list">
                             <ul>
-                                <li><a target="_blank" href="<?php echo $naspo_master; ?>">Master Agreement</a></li>
+                                <li><a target="_blank" href="<?php echo $naspo_secondary; ?>">Master Agreement</a></li>
                                 <li><a target="_blank" href="<?php echo $contract_document; ?>">Participating Addendum</a></li>
                                 <?php if (is_array($extensions)) : ?>
                                     <li><a target="_blank" href="<?php echo $extensions['doc']; ?>">Addendum <?php echo $extensions['date']; ?></a></li>
                                 <?php endif; ?>
-                                <li><a target="_blank" href="<?php echo $naspo_secondary; ?>">Assignment Agreement</a></li>
                                 <li><a target="_blank" href="<?php echo $naspo_pricelist; ?>">Current Pricelist</a></li>
                                 <!-- <li><a href="#partners">Partner by State</a></li> -->
                                 <li><a target="_blank" href="http://www.naspovaluepoint.org/#/page/eMarket-Center-Info">Emarket Center</a></li>
