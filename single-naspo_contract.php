@@ -25,6 +25,9 @@
     			'compare'	=> 'LIKE'
     		),
         ),
+        'meta_key'          => 'company',
+        'orderby'           => 'meta_value',
+        'order'             => 'DESC',
     ));
 
     $contract_number = get_field('state_addendum_number');
