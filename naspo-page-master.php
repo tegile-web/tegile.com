@@ -10,6 +10,8 @@
     global $naspo_id;
     global $naspo_docs_path;
     global $naspo_master;
+    global $naspo_transfer;
+    global $naspo_secondary;
 
     $naspo_master_docs = get_naspo_docs($naspo_docs_path)['Master'];
 
@@ -48,7 +50,7 @@
             <div class="row">
                 <div class="small-12 columns">
                     <h1 class="font-size-h1-hero-bold single-title no-padding">Tegile NASPO ValuePoint Storage Products and Services</h1>
-                    <p>Contract Number <?php echo $naspo_id; ?></p>
+                    <p>Contract Number <?php echo $naspo_transfer; ?></p>
                 </div>
             </div>
             <hr />
@@ -62,7 +64,7 @@
                 <div class="large-7 columns" style="padding-left: 0;">
                     <p>NASPO Contract Expiration Date: March 30, 2018</p>
 
-                    <p>All products and services offered under the Tegile, a Western Digital brand NASPO ValuePoint contract <?php echo $naspo_id; ?> may be purchased. All purchase orders issued by purchasing entities must include the appropriate State's Participating Addendum Contract and the Tegile, a Western Digital brand NASPO ValuePoint contract.  In order to procure products and services hereunder, Eligible Users shall issue purchase orders which shall reference the contract numbers.  Eligible Users are responsible for reviewing the terms and conditions of the appropriate Addendum including all Exhibits.  Configuration limits are set at $500,000/configuration.</p>
+                    <p>All products and services offered under the Tegile, a Western Digital brand NASPO ValuePoint contract <?php echo $naspo_transfer; ?> may be purchased. All purchase orders issued by purchasing entities must include the appropriate State's Participating Addendum Contract and the Tegile, a Western Digital brand NASPO ValuePoint contract.  In order to procure products and services hereunder, Eligible Users shall issue purchase orders which shall reference the contract numbers.  Eligible Users are responsible for reviewing the terms and conditions of the appropriate Addendum including all Exhibits.  Configuration limits are set at $500,000/configuration.</p>
 
                     <div class="clear200rem"></div>
 
@@ -75,6 +77,7 @@
                                 <li><a href="<?php echo $doc; ?>" target="_blank" class="go">NASPO Contract Extension - <?php echo date('F j, Y', $date) ?></a></li>
                             <?php endforeach; ?>
                         <?php endif; ?>
+                        <li><a href="<?php echo $naspo_secondary; ?>" target="_blank" class="go">NASPO Assignment Agreement - Tegile to Western Digital</a></li>
                     </ul>
 
                     <div class="clear200rem"></div>

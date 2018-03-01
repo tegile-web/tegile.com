@@ -3,8 +3,10 @@
 	// Supporting vars
 	// naspo-docs folder path
 	global $naspo_id;
+	global $naspo_transfer;
 	$naspo_docs_path = ABSPATH.'naspo-docs';
 	$naspo_master = '/naspo-docs/Master/tegile-naspo-contract_' . strtolower($naspo_id) . '.pdf';
+	$naspo_secondary = '/naspo-docs/Master/tegile-naspo-transfer_' . strtolower($naspo_transfer) . '.pdf';
 	$naspo_docs = '';
 
 	// Main Functions
