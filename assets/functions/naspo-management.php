@@ -13,12 +13,6 @@
 	// Function to manage NASPO pages
 	function naspo_page_manager() {
 
-		if ( ! defined( 'ABSPATH' ) ) {
-			return;
-		} else {
-			d(ABSPATH);
-		}
-
 		global $naspo_docs;
 		global $naspo_docs_path;
 	    global $naspo_md5;
