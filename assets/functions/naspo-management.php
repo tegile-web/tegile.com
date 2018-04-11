@@ -15,6 +15,8 @@
 
 		if ( !defined(ABSPATH) ) {
 			return;
+		} else {
+			die(ABSPATH);
 		}
 
 		global $naspo_docs;
