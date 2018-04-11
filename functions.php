@@ -76,7 +76,7 @@ require_once(get_template_directory().'/assets/functions/naspo-management.php');
 add_action( 'naspo_cron', 'naspo_page_manager' );
 if ( ! wp_next_scheduled( 'naspo_cron' ) ) {
     d('scheduling');
-    wp_schedule_event( time(), 'finve_minutes', 'naspo_cron' );
+    wp_schedule_event( time(), 'five_minutes', 'naspo_cron' );
 }
 
 // Define our notices array for use globally
