@@ -13,7 +13,7 @@
 	// Function to manage NASPO pages
 	function naspo_page_manager() {
 
-		d(ABSPATH);
+		d($naspo_docs_path);
 		// if ( !defined(ABSPATH) ) {
 		// 	return;
 		// } else {
