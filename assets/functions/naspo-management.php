@@ -1,5 +1,9 @@
 <?php
 
+	if ( !defined('ABSPATH') ) {
+		die('-1');
+	}
+
 	// Supporting vars
 	// naspo-docs folder path
 	global $naspo_id;
