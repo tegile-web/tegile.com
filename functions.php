@@ -73,11 +73,15 @@ add_filter( 'cron_schedules', 'add_cron_intervals' );
 require_once(get_template_directory().'/assets/functions/naspo-management.php');
 
 // add_action( 'init', 'naspo_page_manager' );
-add_action( 'naspo_cron', 'naspo_page_manager' );
-if ( ! wp_next_scheduled( 'naspo_cron' ) ) {
-    d('scheduling');
-    wp_schedule_event( time(), 'five_minutes', 'naspo_cron' );
-}
+// add_action( 'naspo_cron', 'naspo_page_manager' );
+// if ( ! wp_next_scheduled( 'naspo_cron' ) ) {
+//     d('scheduling');
+//     wp_schedule_event( time(), 'five_minutes', 'naspo_cron' );
+// }
+
+// To unregister the Cron Job
+$timestamp = wp_next_scheduled( 'naspo_cron' );
+wp_unschedule_event( $timestamp, 'naspo_cron' );
 
 // Define our notices array for use globally
 $notices = array();
