@@ -1,9 +1,5 @@
 <?php
 
-	if ( !defined('ABSPATH') ) {
-		die('-1');
-	}
-
 	// Supporting vars
 	// naspo-docs folder path
 	global $naspo_id;
@@ -16,6 +12,10 @@
 	// Main Functions
 	// Function to manage NASPO pages
 	function naspo_page_manager() {
+
+		if ( !defined('ABSPATH') ) {
+			die('-1');
+		}
 
 		global $naspo_docs;
 		global $naspo_docs_path;
