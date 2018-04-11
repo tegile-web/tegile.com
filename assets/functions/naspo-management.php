@@ -14,7 +14,7 @@
 	function naspo_page_manager() {
 
 		if ( !defined(ABSPATH) ) {
-			die('-1');
+			return;
 		}
 
 		global $naspo_docs;
