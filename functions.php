@@ -72,7 +72,7 @@ add_filter( 'cron_schedules', 'add_cron_intervals' );
 // Import NASPO Management functions
 require_once(get_template_directory().'/assets/functions/naspo-management.php');
 
-// add_action( 'init', 'naspo_page_manager' );
+// add_action( 'admin_init', 'naspo_page_manager' );
 // add_action( 'naspo_cron', 'naspo_page_manager' );
 // if ( ! wp_next_scheduled( 'naspo_cron' ) ) {
 //     wp_schedule_event( time(), 'five_minutes', 'naspo_cron' );
