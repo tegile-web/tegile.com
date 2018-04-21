@@ -145,7 +145,7 @@
 			<div class="small-12 columns">
 				<p class="font-weight-extrabold font-size-h4 margin-bottom-200rem">Our Company Story</p>
 				<div class="iframe-container shadow no-padding-top no-margin">
-					<iframe class="embedded-video" src="<?php echo $protocol; ?>www.youtube.com/embed/RztpLWZ3k8g?controls=2&rel=0&theme=light&color=red&modestbranding=1&autoplay=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>
+					<iframe class="embedded-video" src="<?php echo $protocol; ?>www.youtube.com/embed/bqVm9wJajqc?controls=2&rel=0&theme=light&color=red&modestbranding=1&autoplay=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>
 				</div>
 			</div>
 		</div>
