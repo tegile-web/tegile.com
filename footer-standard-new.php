@@ -69,13 +69,13 @@
 											<i class="fa fa-google-plus fa-stack-1x"></i>
 										</span>
 									</a>
-									<a href="https://www.facebook.com/tegilestorage" target="_blank">
+									<a href="https://www.facebook.com/tegilestorage/" target="_blank">
 										<span class="fa-stack fa-lg">
 											<i class="fa fa-circle fa-stack-2x fa-background"></i>
 											<i class="fa fa-facebook fa-stack-1x"></i>
 										</span>
 									</a>
-									<a href="https://www.xing.com/companies/tegilesystemsinc." target="_blank">
+									<a href="https://www.xing.com/companies/tegilesystemsinc./" target="_blank">
 										<span class="fa-stack fa-lg">
 											<i class="fa fa-circle fa-stack-2x fa-background"></i>
 											<i class="fa fa-xing fa-stack-1x"></i>
