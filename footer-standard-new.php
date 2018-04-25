@@ -51,7 +51,7 @@
 											<i class="fa fa-twitter fa-stack-1x"></i>
 										</span>
 									</a>
-									<a href="https://www.linkedin.com/company/tegile-systems/" target="_blank">
+									<a href="https://www.linkedin.com/company/2424643/" target="_blank">
 										<span class="fa-stack fa-lg">
 											<i class="fa fa-circle fa-stack-2x fa-background"></i>
 											<i class="fa fa-linkedin fa-stack-1x"></i>
@@ -69,7 +69,7 @@
 											<i class="fa fa-google-plus fa-stack-1x"></i>
 										</span>
 									</a>
-									<a href="https://www.facebook.com/tegilesystems/" target="_blank">
+									<a href="https://www.facebook.com/tegilestorage" target="_blank">
 										<span class="fa-stack fa-lg">
 											<i class="fa fa-circle fa-stack-2x fa-background"></i>
 											<i class="fa fa-facebook fa-stack-1x"></i>
