@@ -1162,3 +1162,11 @@ header.header {
         margin: 0;
     }
 }
+
+@media #{$medium-up-screen} {
+
+    #eyebrow-notice ~ .mega {
+
+        top: auto !important;
+    }
+}

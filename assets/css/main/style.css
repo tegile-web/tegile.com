@@ -14206,6 +14206,10 @@ header.header {
     transform: translateY(-50%);
     margin: 0; }
 
+@media only screen and (min-width: 701px) {
+  #eyebrow-notice ~ .mega {
+    top: auto !important; } }
+
 .fancy-section-break {
   padding: 0; }
   .fancy-section-break .columns {
