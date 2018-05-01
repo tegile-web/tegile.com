@@ -36,7 +36,7 @@
 								<ul class="copyright">
 									<li><span>&copy; <?php echo date('Y'); ?> Western Digital Corporation or its affiliates</span></li>
 									<li><span>All Rights Reserved</span></li>
-									<li><span><a href="<?php echo home_url(); ?>/privacy-policy/">Privacy Policy</a> | <a href="<?php echo home_url(); ?>/cookie-policy/">Cookie Policy</a> | <a href="<?php echo home_url(); ?>/terms-of-use/">Terms of Use</a></span></li>
+									<li><span><a href="https://www.wdc.com/about-wd/legal/privacy-statement.html">Privacy Statement</a> | <a href="https://www.wdc.com/about-wd/legal/privacy-statement.html#cookiestatement">Cookie Statement</a> | <a href="<?php echo home_url(); ?>/terms-of-use/">Terms of Use</a></span></li>
 								</ul>
 								<span class="social-icons">
 									<a href="<?php echo home_url(); ?>/feed/" target="_blank">
