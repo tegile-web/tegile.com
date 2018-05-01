@@ -13547,8 +13547,12 @@ header.header {
     opacity: 1; }
   header.header.alt-nav-bkg.search-mode {
     border-bottom: 1px solid rgba(255, 255, 255, 0.65); }
+  header.header > #eyebrow-notice {
+    transition: all 0.2s ease; }
   header.header.hide-nav {
     top: -4rem; }
+    header.header.hide-nav > #eyebrow-notice {
+      margin-top: -4rem; }
     header.header.hide-nav #burger {
       top: -4rem; }
   header.header.search-mode {
@@ -14098,8 +14102,7 @@ header.header {
 *************************/
 #burger {
   width: 2rem;
-  height: 1.25rem;
-  position: fixed;
+  position: relative;
   top: 1.375rem;
   left: 1.125rem;
   transition: top 0.2s ease, transform 0.5s ease-in-out;
@@ -14137,7 +14140,7 @@ header.header {
     #burger span:nth-child(3) {
       top: 1rem; }
   #burger.open {
-    transform: rotateZ(360deg); }
+    transform: rotateY(180deg); }
     #burger.open span {
       color: #ED573D; }
       #burger.open span:nth-child(1) {

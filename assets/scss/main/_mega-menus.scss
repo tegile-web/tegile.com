@@ -75,9 +75,19 @@ header.header {
         }
     }
 
+    > #eyebrow-notice {
+
+        transition: all 0.2s ease;
+    }
+
     &.hide-nav {
 
         top: -4rem;
+
+        > #eyebrow-notice {
+
+            margin-top: -4rem;
+        }
 
         & #burger {
 
@@ -1005,8 +1015,8 @@ header.header {
     }
 
     width: 2rem;
-    height: 1.25rem;
-    position: fixed;
+    // height: 1.25rem;
+    position: relative;
     top: 1.375rem;
     left: 1.125rem;
     transition: top 0.2s ease, transform 0.5s ease-in-out;
@@ -1058,7 +1068,7 @@ header.header {
 
     &.open {
 
-        transform: rotateZ(360deg);
+        transform: rotateY(180deg);
 
         & span {
 
