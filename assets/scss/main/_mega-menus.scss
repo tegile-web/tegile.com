@@ -75,7 +75,7 @@ header.header {
         }
     }
 
-    > #eyebrow-notice {
+    &> #eyebrow-notice {
 
         transition: all 0.2s ease;
     }
@@ -84,7 +84,7 @@ header.header {
 
         top: -4rem;
 
-        > #eyebrow-notice {
+        &> #eyebrow-notice {
 
             margin-top: -4rem;
         }
