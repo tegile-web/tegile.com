@@ -6,7 +6,7 @@ Template Name: Standard Page - New (White Footer)
 
 <?php get_header("standard-new"); ?>
 
-<pre><?php d(PHP_VERSION()); ?></pre>
+<pre><?php d(phpversion()); ?></pre>
 			
 			<div id="content">
 						
