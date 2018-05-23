@@ -27,7 +27,7 @@
 								</ul>
 							</div>
 							<div class="clear200rem show-for-small-only"></div>
-							<div class="large-8 medium-6 small-12 large-pull-2 medium-pull-3 columns text-center">
+							<div id="footer-middle" class="large-8 medium-6 small-12 large-pull-2 medium-pull-3 columns text-center">
 								<a href="<?php echo home_url(); ?>" rel="nofollow">
 									<!-- <img class="lp-footer-logo" src="<?php echo home_url(); ?>/wp-content/uploads/2016/11/Tegile-Logo-Black-Flat-Vector.svg"> -->
 									<img class="lp-footer-logo" src="<?php echo home_url(); ?>/wp-content/uploads/2017/09/tegile-wd-logo-black.svg">
