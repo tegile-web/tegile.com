@@ -477,7 +477,7 @@ function poll_for_popups() {
             break;
     }
 }
-add_action('wp_footer', 'poll_for_popups');
+// add_action('wp_footer', 'poll_for_popups');
 
 // Redirect Tag archive pages to blog home-page
 // Make sure to make appropriate changes to SEO Ultimate Settings (Meta Robot Tags > Default Values)
