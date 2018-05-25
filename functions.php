@@ -433,7 +433,7 @@ function poll_for_popups() {
 
     $the_user = array(
         'browser'   => parse_user_agent()['browser'],
-        'geo'       => json_decode(file_get_contents("https://freegeoip2.azurewebsites.net/Home/Resolve/".str_replace(".", "-", $_SERVER['REMOTE_ADDR'])))->Location->country_iso_code,
+        // 'geo'       => json_decode(file_get_contents("https://freegeoip2.azurewebsites.net/Home/Resolve/".str_replace(".", "-", $_SERVER['REMOTE_ADDR'])))->Location->country_iso_code,
         'referrer'  => $_SERVER['HTTP_REFERER'],
         'cookies'   => $_COOKIE,
     );
@@ -444,18 +444,6 @@ function poll_for_popups() {
         'post_type' => 'popups',
         'orderby' => 'date',
         'order' => 'DESC',
-        // 'meta_query' => array(
-        //     'relation' => 'OR',
-        //     array(
-        //         'key' => 'hide_resource',
-        //         'compare' => 'NOT EXISTS',
-        //     ),
-        //     array(
-        //         'key' => 'hide_resource',
-        //         'value' => '0',
-        //         'compare' => '==',
-        //     ),
-        // ),
     ));
     
     // Load Ouibounce script for Popup Launch Functionality if required
