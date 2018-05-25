@@ -38,6 +38,7 @@
 									<li><span>All Rights Reserved</span></li>
 									<li><span><a href="https://www.wdc.com/about-wd/legal/privacy-statement.html">Privacy Statement</a> | <a href="https://www.wdc.com/about-wd/legal/privacy-statement.html#cookiestatement">Cookie Statement</a> | <a href="<?php echo home_url(); ?>/terms-of-use/">Terms of Use</a></span></li>
 								</ul>
+								<div id="teconsent"></div>
 								<span class="social-icons">
 									<a href="<?php echo home_url(); ?>/feed/" target="_blank">
 										<span class="fa-stack fa-lg">
