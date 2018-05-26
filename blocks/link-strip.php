@@ -70,6 +70,7 @@
     <?php
         if ($cta) {
             $cta = array(
+                'class' => 'button',
                 'url' => $cta,
                 'text' => 'Read More',
             );
