@@ -274,7 +274,8 @@
 					<ul class="mega-menu-items">
 						<a href="/solutions/server-virtualization/"><li>Virtualization</li></a>
 						<a href="/solutions/desktop-virtualization/"><li>Virtual Desktop</li></a>
-						<a href="/solutions/database/"><li>Database</li></a>
+						<a href="/solutions/database/oracle/"><li>Oracle</li></a>
+						<!-- <a href="/solutions/database/"><li>Database</li></a> -->
 					</ul>
   				</div>
   				<div class="large-4 columns mega-menu-links">
