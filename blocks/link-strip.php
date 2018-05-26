@@ -69,7 +69,10 @@
 
     <?php
         if ($cta) {
-            $cta['text'] = 'Learn More';
+            $cta = array(
+                'url' => $cta,
+                'text' => 'Read More',
+            );
             echo button_generator($cta);
         }
     ?>
