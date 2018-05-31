@@ -89,10 +89,10 @@
 	    }
 	    
         $top_posts = array(
-	    	'case_study' => array(20830, 20842, 20840, 20832),
-			'product_info' => array(20720, 20702, 20711, 20706),
-			'white_paper' => array(21928, 21922, 21920, 21921),
-			'video' => array(20779, 20782, 20783, 20781),
+	    	'case_study' => array(22819, 22326, 25077, 22817),
+			'product_info' => array(20719, 20720, 20702, 20708),
+			'white_paper' => array(24769, 21919, 23652, 22848),
+			'video' => array(24824, 25035, 23225, 23459),
 		);
 
 	    // Loop through top 4's and pull post data
