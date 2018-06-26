@@ -655,6 +655,7 @@ img {
     & .section-background {
 
         z-index: 1;
+        transform: translate3d(0,0,0);
 
         &.stage {
 
@@ -915,6 +916,7 @@ img {
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
+                z-index: 4;
             }
         }
 
@@ -1189,6 +1191,11 @@ img {
 /*************************
  *  Multi-Column Styles  *
 **************************/
+
+.section-multi-column {
+
+    position: relative;
+}
 
 .section-multi-column img {
 
