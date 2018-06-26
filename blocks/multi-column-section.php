@@ -116,9 +116,9 @@
 
             $columns[$i] = implode('',$columns[$i]);
 
-            $columns[$i] .= ( ($i==12/$rows) ? ('') : ('<div class="clear200rem show-for-small-only" style="<?php echo $font;?>;"></div>') );
+            $columns[$i] .= ( ($i==12/$rows) ? ('') : ('<div class="clear200rem show-for-small-only"></div>') );
 
-            $columns[$i] = '<div class="collapse small-12 medium-'.$rows.' columns small-only-text-center">'.$columns[$i].'</div>';
+            $columns[$i] = '<div class="collapse small-12 medium-'.$rows.' columns small-only-text-center" style="'.$font.';">'.$columns[$i].'</div>';
             
         endwhile;
 
