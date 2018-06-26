@@ -5,6 +5,7 @@
     $header = get_sub_field('header');
     $blurb = get_sub_field('blurb');
     $section_size = get_sub_field('size');
+    $font = '';
 
     // NEED TO ADD THIS CTA FIELD SOMEWHERE
     $cta = get_sub_field('cta');
@@ -122,6 +123,16 @@
 <a id="<?php the_sub_field('id') ?>"></a>
 <div class="row-wide section-multi-column <?php echo $modifiers; ?>">
 
+
+    <!-- Add the visual settings block if 'Customize Background' is true -->
+    <?php if (get_sub_field('custom-bkg')) {
+
+        include(locate_template('blocks/section-visual-settings.php'));
+        $font = get_sub_field('text-color');
+        d($font);
+
+    } ?>
+
     <div class="row main-row">
 
         <?php if ($header): ?>
@@ -135,8 +146,5 @@
         <?php echo implode('', $columns); ?>
     
     </div>
-
-    <!-- Add the visual settings block if 'Customize Background' is true -->
-    <?php if (get_sub_field('custom-bkg')) { include(locate_template('blocks/section-visual-settings.php')); } ?>
 
 </div>
