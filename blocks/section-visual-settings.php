@@ -10,7 +10,7 @@
     global $films;
     global $data_types;
 
-    $font = get_sub_field('text-color');
+    // $font = get_sub_field('text-color');
     $film = get_sub_field('film-preset');
     $filter = get_sub_field('filter-preset');
     $bkg_image = get_sub_field('bkg-image');
