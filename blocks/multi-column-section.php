@@ -5,7 +5,6 @@
     $header = get_sub_field('header');
     $blurb = get_sub_field('blurb');
     $section_size = get_sub_field('size');
-    $font = '';
 
     // NEED TO ADD THIS CTA FIELD SOMEWHERE
     $cta = get_sub_field('cta');
@@ -25,6 +24,15 @@
     $rows = count(get_sub_field('columns'));
     $rows = 12 / $rows;
     $columns = array();
+
+    if (get_sub_field('custom-bkg')) {
+
+        $font = 'color:'.get_sub_field('text-color');
+
+    } else {
+
+        $font = '';
+    }
 
     if (have_rows('columns')):
 
@@ -108,7 +116,7 @@
 
             $columns[$i] = implode('',$columns[$i]);
 
-            $columns[$i] .= ( ($i==12/$rows) ? ('') : ('<div class="clear200rem show-for-small-only"></div>') );
+            $columns[$i] .= ( ($i==12/$rows) ? ('') : ('<div class="clear200rem show-for-small-only" style="<?php echo $font;?>;"></div>') );
 
             $columns[$i] = '<div class="collapse small-12 medium-'.$rows.' columns small-only-text-center">'.$columns[$i].'</div>';
             
@@ -128,18 +136,17 @@
     <?php if (get_sub_field('custom-bkg')) {
 
         include(locate_template('blocks/section-visual-settings.php'));
-        $font = get_sub_field('text-color');
 
     } ?>
 
     <div class="row main-row">
 
         <?php if ($header): ?>
-            <h2 class="text-center margin-bottom-200rem" style="color:<?php echo $font; ?>;"><?php echo $header; ?></h2>
+            <h2 class="text-center margin-bottom-200rem" style="<?php echo $font; ?>;"><?php echo $header; ?></h2>
         <?php endif; ?>
 
         <?php if ($blurb): ?>
-            <div class="text-center margin-bottom-400rem" style="color:<?php echo $font; ?>;"><?php echo $blurb; ?></div>
+            <div class="text-center margin-bottom-400rem" style="<?php echo $font; ?>;"><?php echo $blurb; ?></div>
         <?php endif; ?>
 
         <?php echo implode('', $columns); ?>
