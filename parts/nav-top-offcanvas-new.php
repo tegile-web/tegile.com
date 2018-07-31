@@ -231,9 +231,9 @@
   					<ul class="mega-menu-items">
 						<a href="/products/"><li class="mega-menu-header">IntelliFlash Arrays</li></a>
 						<a href="/products/nvme-array/"><li>NVMe Arrays</li></a>
+						<a href="/products/intelliflashhd/"><li>IntelliFlash HD</li></a>
 						<a href="/products/all-flash-array/"><li>All-Flash Arrays</li></a>
 						<a href="/products/hybrid-array/"><li>Hybrid Arrays</li></a>
-						<a href="/products/intelliflashhd/"><li>IntelliFlash HD</li></a>
 					</ul>
   				</div>
   				<div class="large-4 columns mega-menu-links">
