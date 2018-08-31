@@ -28,7 +28,7 @@ function resource_custom_taxonomies(){
 		'show_in_nav_menus' => true,
 		'show_tagcloud'     => true,
 		'rewrite' => array(
-			'slug' => '/',
+			'slug' => 'use-case',
 			'with_front' => false,
 			'hierarchical' => true
 			)
