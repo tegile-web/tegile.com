@@ -1,8 +1,6 @@
 <?php get_header('standard-new'); ?>
 			
 			<div id="content">
-
-				<pre>Right Template</pre>
 			
 				<div id="inner-content" class="row-wide bg-row-even">
 
