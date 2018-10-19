@@ -9,7 +9,7 @@
 					<div class="row">
 						
 						<div class="small-12 columns margin-bottom-200rem">
-							<h1 class="font-size-h1-hero-bold">Tegile Blog</h1>
+							<h1 class="font-size-h1-hero-bold">Tegile Blog (TEST)</h1>
 							<hr>
 						</div>
 
