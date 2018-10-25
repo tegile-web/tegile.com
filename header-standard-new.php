@@ -88,6 +88,7 @@
 		$page_id = pathinfo(basename( get_page_template() ), PATHINFO_FILENAME);
 
 		d(get_page_template());
+		d("Hi");
 
 		if ($page_id == 'page') {
 			$page_id = 'page-standard-new';
