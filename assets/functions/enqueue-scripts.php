@@ -22,7 +22,7 @@ function joints_scripts_and_styles() {
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/min/scripts.js', array( 'jquery' ), '', true );
 
-    // Load ScrollDepth script for Detecting on-page scrolldepth
+    // Load ScrollDepth script from cdnjs for Detecting on-page scrolldepth
     wp_enqueue_script( 'depth-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-scrolldepth/1.0.0/jquery.scrolldepth.min.js', array( 'jquery' ), '', true );
 
     // Register main stylesheet
