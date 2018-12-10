@@ -9248,6 +9248,7 @@ footer {
       footer.lp-footer {
         padding-top: 0; } }
     footer.lp-footer .lp-footer-logo {
+      display: block;
       margin-bottom: 2rem; }
       footer.lp-footer .lp-footer-logo svg {
         max-width: 300px; }
