@@ -101,7 +101,7 @@
 						 <div class="row-wide lp-header">
 						 	<div class="row">
 						 		<div class="small-12 columns">
-						 			<a href="<?php echo home_url(); ?>/" rel="nofollow">
+						 			<a href="https://www.westerndigital.com" rel="nofollow">
                   						<span class="wd-logo">
                   							<?php echo $logo; ?>
                   						</span>
