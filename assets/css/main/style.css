@@ -13578,7 +13578,7 @@ header.header {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.375);
     background: rgba(34, 34, 34, 0.99);
     opacity: 0; }
-  header.header.lp-header .lp-header .wd-logo {
+  header.header.lp-header .lp-header .wd-logo svg {
     max-width: 300px; }
     header.header.lp-header .lp-header .wd-logo svg path {
       fill: #222222 !important; }
