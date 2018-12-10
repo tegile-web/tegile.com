@@ -1,3 +1,11 @@
+<?php
+
+	// $logo_src = 'western-digital-blog-logo.svg';
+ //  	$logo_pth = get_template_directory() . '/dist/img/' . $logo_src;
+ //  	$logo = file_get_contents( wp_make_link_relative( $logo_pth ) );
+
+?>
+
 <!doctype html>
 
   <html class="no-js"  <?php language_attributes(); ?>>
