@@ -98,7 +98,7 @@
 			<div class="inner-wrap">
 				<div id="container">
 					<header class="header lp-header" role="banner">
-						 <div class="row-wide no-padding no-margin lp-header">
+						 <div class="row-wide lp-header">
 						 	<div class="row">
 						 		<div class="small-12 columns">
 						 			<a href="<?php echo home_url(); ?>/" rel="nofollow">
