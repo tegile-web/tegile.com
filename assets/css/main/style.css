@@ -13578,10 +13578,16 @@ header.header {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.375);
     background: rgba(34, 34, 34, 0.99);
     opacity: 0; }
-  header.header.lp-header .lp-header .wd-logo svg {
-    max-width: 300px; }
-    header.header.lp-header .lp-header .wd-logo svg path {
-      fill: #222222 !important; }
+  header.header.lp-header .lp-header {
+    margin: 0;
+    margin-top: -.5rem;
+    padding: 1.5rem 0;
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+    header.header.lp-header .lp-header .wd-logo svg {
+      max-width: 300px; }
+      header.header.lp-header .lp-header .wd-logo svg path {
+        fill: #222222 !important; }
   header.header.alt-nav-bkg:after {
     opacity: 1; }
   header.header.alt-nav-bkg.search-mode {
