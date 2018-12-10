@@ -39,6 +39,7 @@
 
 ?>
 
+<!-- LP Header -->
 <?php get_header('landing-page-no-nav-new'); ?>
 
 <div id="content">
