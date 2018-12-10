@@ -1960,6 +1960,19 @@ footer {
 
 			padding-top: 0;
 		}
+
+		& .lp-footer-logo {
+
+			& svg {
+
+                max-width: 300px;
+
+                & path {
+
+                    fill: $charcoal !important;
+                }
+            }
+		}
 	}
 
 	background-color: $charcoal;
