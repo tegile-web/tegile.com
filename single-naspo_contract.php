@@ -89,7 +89,7 @@
         <div class="row-wide no-padding-bottom">
           <div class="row">
               <div class="small-12 columns">
-                  <p class="font-size-h6 no-margin-bottom"><a href="/naspo/" class="font-weight-normal color-charcaol"><i class="fa fa-angle-double-left"></i>TEGILE NASPO VALUEPOINT STORAGE PRODUCTS AND SERVICES <?php echo $naspo_transfer; ?></a></p>
+                  <p class="font-size-h6 no-margin-bottom"><a href="/naspo/" class="font-weight-normal color-charcaol"><i class="fa fa-angle-double-left"></i>WESTERN DIGITAL NASPO VALUEPOINT STORAGE PRODUCTS AND SERVICES <?php echo $naspo_transfer; ?></a></p>
               </div>
           </div>
         </div>
@@ -114,9 +114,9 @@
 
                 <!-- Display the main content body -->
                 <div class="large-7 columns" style="padding-left: 0;">
-                    <p>The State of <?php echo $title; ?> has authorized all government entities within the State of <?php echo $title; ?> to purchase all products offered under the Tegile, a Western Digital brand NASPO ValuePoint contract <strong><?php echo $naspo_transfer; ?></strong>.</p>
+                    <p>The State of <?php echo $title; ?> has authorized all government entities within the State of <?php echo $title; ?> to purchase all products offered under the Western Digital NASPO ValuePoint contract <strong><?php echo $naspo_transfer; ?></strong>.</p>
 
-                      <p>All products and services offered under the Tegile, a Western Digital brand NASPO ValuePoint contract <?php echo $naspo_transfer; ?> may be purchased. All purchase orders issued by purchasing entities must include the State of <?php echo $title; ?> Participating Addendum Contract number <strong><?php echo $contract_number; ?></strong>; and the Tegile, a Western Digital brand NASPO ValuePoint contract <strong><?php echo $naspo_transfer; ?></strong>.  In order to procure products and services hereunder, Eligible Users shall issue purchase orders which shall reference the contract numbers.  Eligible Users are responsible for reviewing the terms and conditions of this Addendum including all Exhibits.  Configuration limits are set at $500,000/configuration.  Please see the <a target="_blank" href="<?php echo $contract_document; ?>"><?php echo $title; ?> NASPO ValuePoint <?php echo $naspo_transfer; ?> Computer Equipment, Peripherals and Related Services Participating Addendum</a> for complete details.</p>
+                      <p>All products and services offered under the Western Digital NASPO ValuePoint contract <?php echo $naspo_transfer; ?> may be purchased. All purchase orders issued by purchasing entities must include the State of <?php echo $title; ?> Participating Addendum Contract number <strong><?php echo $contract_number; ?></strong>; and the Western Digital NASPO ValuePoint contract <strong><?php echo $naspo_transfer; ?></strong>.  In order to procure products and services hereunder, Eligible Users shall issue purchase orders which shall reference the contract numbers.  Eligible Users are responsible for reviewing the terms and conditions of this Addendum including all Exhibits.  Configuration limits are set at $500,000/configuration.  Please see the <a target="_blank" href="<?php echo $contract_document; ?>"><?php echo $title; ?> NASPO ValuePoint <?php echo $naspo_transfer; ?> Computer Equipment, Peripherals and Related Services Participating Addendum</a> for complete details.</p>
 
                     <?php if (is_array($extensions)) : ?>
                         <p><a href="<?php echo $extensions['doc']; ?>" target="_blank">Amendment <?php echo $extensions['date']; ?></a> to the Participating Addendum extends the term of the contract to <strong><?php echo $extensions['date']; ?></strong>.</p>
@@ -132,7 +132,7 @@
 
                         <div class="clear300rem"></div>
 
-                        <p><strong>Tegile Partner Contact Information:</strong></p>
+                        <p><strong>Western Digital Partner Contact Information:</strong></p>
                         <hr />
 
                         <?php
@@ -173,7 +173,7 @@
                                 <li><a target="_blank" href="<?php echo $naspo_pricelist; ?>">Current Pricelist</a></li>
                                 <!-- <li><a href="#partners">Partner by State</a></li> -->
                                 <li><a target="_blank" href="http://www.naspovaluepoint.org/#/page/eMarket-Center-Info">Emarket Center</a></li>
-                                <li><a href="/">Tegile Website</a></li>
+                                <li><a href="https://www.westerndigital.com">Western Digital Website</a></li>
                             </ul>
                             <div class="banner">
                                 <h2>Contract Questions?</h2>
