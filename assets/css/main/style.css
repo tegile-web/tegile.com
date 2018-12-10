@@ -13589,12 +13589,12 @@ header.header {
     margin: 0;
     margin-top: -.5rem;
     padding: 1.25rem 0;
-    background: white;
+    background: #222222;
     border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
     header.header.lp-header .lp-header .wd-logo svg {
       max-width: 300px; }
       header.header.lp-header .lp-header .wd-logo svg path {
-        fill: #222222 !important; }
+        fill: #ffffff !important; }
   header.header.alt-nav-bkg:after {
     opacity: 1; }
   header.header.alt-nav-bkg.search-mode {
