@@ -9247,10 +9247,12 @@ footer {
     @media only screen and (max-width: 700px) {
       footer.lp-footer {
         padding-top: 0; } }
-    footer.lp-footer .lp-footer-logo svg {
-      max-width: 300px; }
-      footer.lp-footer .lp-footer-logo svg path {
-        fill: #222222 !important; }
+    footer.lp-footer .lp-footer-logo {
+      margin-bottom: 1rem; }
+      footer.lp-footer .lp-footer-logo svg {
+        max-width: 300px; }
+        footer.lp-footer .lp-footer-logo svg path {
+          fill: #222222 !important; }
   footer ul {
     list-style: none;
     color: #858484;
