@@ -62,6 +62,23 @@ header.header {
         opacity: 0;
     }
 
+    &.lp-header {
+
+        & .lp-header {
+
+            & .wd-logo {
+
+                & svg {
+
+                    & path {
+
+                        fill: $charcoal !important;
+                    }
+                }
+            }
+        }
+    }
+
     &.alt-nav-bkg {
 
         &:after {
