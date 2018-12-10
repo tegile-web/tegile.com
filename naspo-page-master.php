@@ -63,7 +63,7 @@
 
                 <!-- Display the main content body -->
                 <div class="large-7 columns" style="padding-left: 0;">
-                    <p>NASPO Contract Expiration Date: March 30, 2018</p>
+                    <p>NASPO Contract Expiration Date: March 30, 2019</p>
 
                     <p>All products and services offered under the Wetern Digital NASPO ValuePoint contract <?php echo $naspo_transfer; ?> may be purchased. All purchase orders issued by purchasing entities must include the appropriate State's Participating Addendum Contract and the Western Digital NASPO ValuePoint contract.  In order to procure products and services hereunder, Eligible Users shall issue purchase orders which shall reference the contract numbers.  Eligible Users are responsible for reviewing the terms and conditions of the appropriate Addendum including all Exhibits.  Configuration limits are set at $500,000/configuration.</p>
 
@@ -118,7 +118,7 @@
                     <h3>Western Digital Product Description and Information</h3>
 
                     <ul>
-                        <li><a href="http://www.tegile.com/wp-content/uploads/2017/11/IntelliFlash-Product-Matrix-Final-11_01_2017.pdf" target="_blank" class="go">T-Series Product Matrix</a></li>
+                        <li><a href="https://www.westerndigital.com/products/storage-systems" target="_blank" class="go">T-Series Product Matrix</a></li>
                     </ul>
 
                 </div>
@@ -157,7 +157,7 @@
                             </div>
                             <ul>
                                 <li><a target="_blank" href="http://www.naspovaluepoint.org/#/page/eMarket-Center-Info">Emarket Center</a></li>
-                                <li><a href="https://www.westerndigital.com/products/storage-systems">Western Digital Website</a></li>
+                                <li><a href="https://www.westerndigital.com">Western Digital Website</a></li>
                             </ul>
                         </div>
                     </div>
