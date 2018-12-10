@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="small-12 columns">
                     <h1 class="font-size-h1-hero-bold single-title no-padding">Western Digital NASPO ValuePoint Storage Products and Services</h1>
-                    <p>Contract Number <?php echo $naspo_transfer; ?></p>
+                    <p class="small-only-text-center margin-top-100rem">Contract Number <?php echo $naspo_transfer; ?></p>
                 </div>
             </div>
             <hr />
