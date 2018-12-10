@@ -102,7 +102,7 @@
 						 	<div class="row">
 						 		<div class="small-12 columns">
 						 			<a href="<?php echo home_url(); ?>/" rel="nofollow">
-                  						<span style="fill: #222;">
+                  						<span class="wd-logo">
                   							<?php echo $logo; ?>
                   						</span>
 						 			</a>
