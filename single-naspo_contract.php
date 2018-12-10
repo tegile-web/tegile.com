@@ -173,7 +173,7 @@
                                 <li><a target="_blank" href="<?php echo $naspo_pricelist; ?>">Current Pricelist</a></li>
                                 <!-- <li><a href="#partners">Partner by State</a></li> -->
                                 <li><a target="_blank" href="http://www.naspovaluepoint.org/#/page/eMarket-Center-Info">Emarket Center</a></li>
-                                <li><a href="https://www.westerndigital.com">Western Digital Website</a></li>
+                                <li><a href="https://www.westerndigital.com/products/storage-systems">Western Digital Website</a></li>
                             </ul>
                             <div class="banner">
                                 <h2>Contract Questions?</h2>
