@@ -1,8 +1,7 @@
 <?php
 
-	// $logo_src = 'western-digital-blog-logo.svg';
- //  	$logo_pth = get_template_directory() . '/dist/img/' . $logo_src;
- //  	$logo = file_get_contents( wp_make_link_relative( $logo_pth ) );
+	$logo_src = '/wp-content/uploads/2018/12/western-digital-logo.svg';
+  	$logo = file_get_contents( $logo_src );
 
 ?>
 
@@ -103,7 +102,9 @@
 						 	<div class="row">
 						 		<div class="small-12 columns">
 						 			<a href="<?php echo home_url(); ?>/" rel="nofollow">
-                  						<img src="/wp-content/uploads/2018/12/western-digital-logo.svg" />
+                  						<span style="fill: #222;">
+                  							<?php echo $logo; ?>
+                  						</span>
 						 			</a>
 						 		</div>
 						 	</div>
