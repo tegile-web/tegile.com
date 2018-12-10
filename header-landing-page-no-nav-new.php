@@ -94,10 +94,9 @@
 						 <div class="row-wide no-padding no-margin lp-header">
 						 	<div class="row">
 						 		<div class="small-12 columns">
-						 		<a href="<?php echo home_url(); ?>/" rel="nofollow">
-						 			<!-- <?php $logoColor = (is_page('stairway-to-storage-heaven-terms-conditions')) ? 'black' : 'white';  ?> -->
-                  <img src="/wp-content/uploads/2017/09/tegile-wd-logo-white.svg" />
-						 		</a>
+						 			<a href="<?php echo home_url(); ?>/" rel="nofollow">
+                  						<img src="/wp-content/uploads/2018/12/western-digital-logo.svg" />
+						 			</a>
 						 		</div>
 						 	</div>
 						 </div>
