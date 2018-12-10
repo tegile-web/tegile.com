@@ -40,8 +40,6 @@
 ?>
 
 <!-- LP Header -->
-<!-- Testing -->
-<?php d('changes'); ?>
 <?php get_header('landing-page-no-nav-new'); ?>
 
 <div id="content">
