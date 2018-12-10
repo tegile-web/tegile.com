@@ -157,7 +157,7 @@
                             </div>
                             <ul>
                                 <li><a target="_blank" href="http://www.naspovaluepoint.org/#/page/eMarket-Center-Info">Emarket Center</a></li>
-                                <li><a href="https://www.westerndigital.com">Western Digital Website</a></li>
+                                <li><a href="https://www.westerndigital.com/products/storage-systems">Western Digital Website</a></li>
                             </ul>
                         </div>
                     </div>
