@@ -79,7 +79,7 @@
 
 ?>
 
-<?php get_header("standard-new"); ?>
+<?php get_header("landing-page-no-nav-new"); ?>
 
 <div id="content">
 
