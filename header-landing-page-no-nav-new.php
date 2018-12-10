@@ -1,6 +1,6 @@
 <?php
 
-	$logo_src = __DIR__ . '../../uploads/2018/12/western-digital-logo.svg';
+	$logo_src = __DIR__ . '/../../uploads/2018/12/western-digital-logo.svg';
   	$logo = file_get_contents( $logo_src );
 
 ?>
